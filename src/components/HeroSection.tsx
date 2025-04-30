@@ -4,13 +4,16 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
+  
   return (
     <section className="bg-gradient-to-br from-accent/50 to-background py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-          <div className="animate-fade-in">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+          <div className="animate-fade-in mt-8 lg:mt-0">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
               Welcome to <span className="text-primary">Waqar Majiet's</span> Portfolio
             </h1>
@@ -30,10 +33,11 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          <div className="hidden lg:block mt-12 lg:mt-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
+          
+          <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100 max-w-xs mx-auto lg:max-w-none">
               <div className="p-4">
-                <AspectRatio ratio={3/4} className="overflow-hidden rounded-md">
+                <AspectRatio ratio={isMobile ? 1 : 3/4} className="overflow-hidden rounded-md">
                   <img 
                     src="/lovable-uploads/da097ec3-b50d-4ad1-8a91-3dc9e8a0ddf3.png" 
                     alt="Waqar Majiet" 
