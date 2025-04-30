@@ -1,6 +1,7 @@
 
 import Layout from '@/components/Layout';
 import ContactForm from '@/components/ContactForm';
+import Map from '@/components/Map';
 import { Card, CardContent } from '@/components/ui/card';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
@@ -64,7 +65,7 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Map or Visual Element */}
+      {/* Map */}
       <section className="mt-16 bg-muted py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
@@ -72,14 +73,11 @@ const Contact = () => {
             <p className="text-gray-600 mt-2">Mitchell's Plain, Cape Town, South Africa</p>
           </div>
           
-          <div className="bg-white p-6 rounded-lg shadow-sm h-64 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-12 w-12 mx-auto text-primary/60 mb-4" />
-              <p className="text-gray-600">
-                Map visualization placeholder - Cape Town, South Africa
-              </p>
-            </div>
-          </div>
+          <Map 
+            center={[18.6168, -34.0476]} 
+            zoom={13} 
+            className="h-96 rounded-lg shadow-sm" 
+          />
         </div>
       </section>
     </Layout>
