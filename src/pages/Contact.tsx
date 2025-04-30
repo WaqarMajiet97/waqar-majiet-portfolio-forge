@@ -74,7 +74,7 @@ const Contact = () => {
           </div>
           
           <Map 
-            center={[18.6168, -34.0476]} 
+            center={{ lat: -34.0476, lng: 18.6168 }} 
             zoom={13} 
             className="h-96 rounded-lg shadow-sm" 
           />
