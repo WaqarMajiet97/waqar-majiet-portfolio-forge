@@ -2,6 +2,8 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const HeroSection = () => {
   return (
@@ -30,15 +32,17 @@ const HeroSection = () => {
           </div>
           <div className="hidden lg:block mt-12 lg:mt-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-100">
-              <div className="aspect-w-3 aspect-h-4 bg-gray-100 flex items-center justify-center">
-                <div className="p-12 flex items-center justify-center bg-primary/10 h-full w-full">
-                  <div className="text-center">
-                    <div className="h-36 w-36 bg-primary/20 rounded-full mx-auto flex items-center justify-center">
-                      <span className="text-5xl font-bold text-primary">WM</span>
-                    </div>
-                    <h2 className="mt-6 text-2xl font-semibold text-gray-800">Waqar Majiet</h2>
-                    <p className="mt-2 text-gray-600">Technology Professional</p>
-                  </div>
+              <div className="p-4">
+                <AspectRatio ratio={3/4} className="overflow-hidden rounded-md">
+                  <img 
+                    src="/lovable-uploads/da097ec3-b50d-4ad1-8a91-3dc9e8a0ddf3.png" 
+                    alt="Waqar Majiet" 
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+                <div className="pt-4 text-center">
+                  <h2 className="text-2xl font-semibold text-gray-800">Waqar Majiet</h2>
+                  <p className="mt-2 text-gray-600">Technology Professional</p>
                 </div>
               </div>
             </div>
