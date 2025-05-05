@@ -1,3 +1,4 @@
+
 import Layout from '@/components/Layout';
 import CertificationCard from '@/components/CertificationCard';
 import { Button } from '@/components/ui/button';
@@ -66,7 +67,7 @@ const Projects = () => {
       {/* Header */}
       <section className="bg-primary/5 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl font-bold mb-6">Projects & Achievements</h1>
+          <h1 className="text-4xl font-bold mb-6">Projects and Achievements</h1>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-600 leading-relaxed">
               Professional certifications and notable accomplishments that showcase my skills and expertise.
