@@ -32,10 +32,10 @@ const Footer = () => {
             <div>
               <h3 className="font-medium text-gray-900 mb-2">Connect</h3>
               <div className="flex space-x-4 mt-2">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+                <a href="https://github.com/WaqarMajiet97" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                   <Github className="h-5 w-5" />
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+                <a href="https://www.linkedin.com/in/waqar-majiet-915496269/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                   <Linkedin className="h-5 w-5" />
                 </a>
                 <a href="mailto:majietwaqar97@gmail.com" className="text-gray-600 hover:text-primary transition-colors">
