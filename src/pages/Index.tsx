@@ -39,7 +39,7 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { icon: User, title: "About Me", description: "Learn more about my skills and background", link: "/about" },
-            { icon: Briefcase, title: "Projects & Certifications", description: "Explore my achievements and certifications", link: "/projects" },
+            { icon: Briefcase, title: "Projects & Achievements", description: "Explore my achievements and certifications", link: "/projects" },
             { icon: GraduationCap, title: "Education", description: "My academic journey and qualifications", link: "/education" },
             { icon: Mail, title: "Contact", description: "Get in touch with me", link: "/contact" }
           ].map((item, index) => (
