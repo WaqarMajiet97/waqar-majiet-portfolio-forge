@@ -85,7 +85,7 @@ const Projects = () => {
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
                 <img 
-                  src="/placeholder.svg" 
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                   alt="Task Management App Screenshot" 
                   className="w-full h-full object-cover"
                 />
@@ -148,9 +148,16 @@ const Projects = () => {
         </div>
       </section>
       
-      {/* Skills Summary */}
-      <section className="bg-muted py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      {/* Skills Summary with Background Image */}
+      <section className="py-16 relative">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Technology Background"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <h2 className="text-2xl font-bold mb-8 text-center">Skills Overview</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
