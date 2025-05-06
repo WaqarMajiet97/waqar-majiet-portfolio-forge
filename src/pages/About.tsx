@@ -2,7 +2,8 @@
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { GraduationCap, Code, Database, Award, Globe } from 'lucide-react';
+import { GraduationCap, Code, Database, Award, Globe, Briefcase } from 'lucide-react';
+import WorkExperienceCard from '@/components/WorkExperienceCard';
 
 const About = () => {
   const skills = [
@@ -53,6 +54,46 @@ const About = () => {
               </p>
             </div>
             
+            {/* Work Experience Section */}
+            <div className="mt-12">
+              <h3 className="text-xl font-bold mb-6 flex items-center">
+                <Briefcase className="mr-2 h-5 w-5 text-primary" />
+                Professional Experience
+              </h3>
+              <div className="space-y-4">
+                <WorkExperienceCard 
+                  company="Condor Green"
+                  position="Learnership Position"
+                  period="June 2023 - May 2024"
+                />
+                <WorkExperienceCard 
+                  company="Sisonke Engineering and Hydraulics"
+                  position="Learnership Position"
+                  period="July 2021 - July 2022"
+                />
+                <WorkExperienceCard 
+                  company="Amazon Development Centre"
+                  position="Customer Service Associate"
+                  period="June 2019 - September 2019"
+                />
+                <WorkExperienceCard 
+                  company="Liberty Life"
+                  position="Financial Adviser"
+                  period="March 2019 - May 2019"
+                />
+                <WorkExperienceCard 
+                  company="Old Mutual"
+                  position="Trainee Administrator"
+                  period="March 2017 - February 2019"
+                />
+                <WorkExperienceCard 
+                  company="Solutions Experts"
+                  position="Debt Review Sales Consultant"
+                  period="January 2017 - February 2017"
+                />
+              </div>
+            </div>
+            
             {/* Core Strengths */}
             <div className="mt-12">
               <h3 className="text-xl font-bold mb-6">Core Strengths</h3>
@@ -95,8 +136,31 @@ const About = () => {
             </div>
           </div>
           
-          {/* Right column - Skills */}
+          {/* Right column - Skills and Personal Info */}
           <div>
+            {/* Personal Information */}
+            <div className="mb-8 bg-muted rounded-lg p-6">
+              <h3 className="text-lg font-medium mb-4">Personal Information</h3>
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-start">
+                  <span className="font-medium w-32">Full Name:</span>
+                  <span className="text-gray-600">Waqar Majiet</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium w-32">Date of Birth:</span>
+                  <span className="text-gray-600">9 December 1997</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium w-32">Nationality:</span>
+                  <span className="text-gray-600">South African</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium w-32">Languages:</span>
+                  <span className="text-gray-600">English and Afrikaans</span>
+                </li>
+              </ul>
+            </div>
+          
             <h2 className="text-2xl font-bold mb-6">Skills</h2>
             
             <div className="space-y-8">
