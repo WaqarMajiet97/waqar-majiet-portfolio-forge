@@ -63,8 +63,8 @@ const Index = () => {
       <section className="bg-muted py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold">Featured Certifications</h2>
-            <p className="text-gray-600 mt-2">Some of my recent professional certifications</p>
+            <h2 className="text-3xl font-bold">Featured Certifications and Courses</h2>
+            <p className="text-gray-600 mt-2">Some of my recent professional certifications and courses</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
