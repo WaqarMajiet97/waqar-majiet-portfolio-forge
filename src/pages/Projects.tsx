@@ -197,6 +197,45 @@ const Projects = () => {
           </div>
         </div>
       </section>
+
+      {/* Skills & Knowledge Gained with Background Image */}
+      <section className="py-16 relative">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Programming Background"
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <h2 className="text-2xl font-bold mb-8 text-center">Skills & Knowledge Gained</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold text-xl mb-4 text-primary">Languages</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>SQL Basics</li>
+                <li>Python Fundamentals</li>
+                <li>Markdown</li>
+              </ul>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-semibold text-xl mb-4 text-primary">Tools & Technologies</h3>
+              <ul className="space-y-2 text-gray-600">
+                <li>Google Workspace</li>
+                <li>Microsoft Office Suite</li>
+                <li>Customer Service Platforms</li>
+                <li>Basic Version Control</li>
+                <li>Project Management Software</li>
+                <li>Cloud Service Platforms</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
