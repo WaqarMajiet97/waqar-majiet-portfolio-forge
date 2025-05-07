@@ -78,7 +78,7 @@ const Projects = () => {
       
       {/* Professional Certifications */}
       <section className="section-container">
-        <h2 className="text-2xl font-bold mb-8">Professional Certifications</h2>
+        <h2 className="text-2xl font-bold mb-8">Professional Certifications and Online Courses</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <CertificationCard
@@ -93,9 +93,9 @@ const Projects = () => {
         </div>
       </section>
       
-      {/* No-Code Projects */}
+      {/* Projects - Renamed from No-Code Solutions */}
       <section className="section-container">
-        <h2 className="text-2xl font-bold mb-8">No-Code Solutions</h2>
+        <h2 className="text-2xl font-bold mb-8">Projects</h2>
         
         <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
           <div className="md:flex">
