@@ -29,6 +29,11 @@ const Index = () => {
     },
   ];
 
+  // This function will ensure links scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Layout>
       <HeroSection />
@@ -50,7 +55,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-medium mb-2">{item.title}</h3>
                 <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" onClick={scrollToTop}>
                   <Link to={item.link}>View More</Link>
                 </Button>
               </CardContent>
@@ -80,8 +85,8 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-10">
-            <Button asChild>
-              <Link to="/projects">View All Certifications</Link>
+            <Button asChild onClick={scrollToTop}>
+              <Link to="/education">View All Certifications</Link>
             </Button>
           </div>
         </div>
@@ -95,7 +100,7 @@ const Index = () => {
             If you're looking for a dedicated professional with strong analytical skills and a creative mindset, 
             feel free to reach out to discuss potential opportunities.
           </p>
-          <Button asChild size="lg">
+          <Button asChild size="lg" onClick={scrollToTop}>
             <Link to="/contact">Get In Touch</Link>
           </Button>
         </div>

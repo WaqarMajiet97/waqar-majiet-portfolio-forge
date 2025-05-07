@@ -1,8 +1,66 @@
 
 import Layout from '@/components/Layout';
 import EducationCard from '@/components/EducationCard';
+import CertificationCard from '@/components/CertificationCard';
 
 const Education = () => {
+  const certifications = [
+    {
+      title: "Verbal Communications and Presentation Skills",
+      issuer: "Starweaver",
+      date: "Mar 2025",
+      skills: ["Oral Communication"]
+    },
+    {
+      title: "AWS Cloud Technical Essentials",
+      issuer: "Amazon Web Services",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
+      title: "Cloud Computing Foundations",
+      issuer: "IBM",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
+      title: "Introduction to Software, Programming and Databases",
+      issuer: "IBM Skills Network Team",
+      date: "Mar 2025",
+      skills: []
+    },
+    {
+      title: "Google Cloud Fundamentals: Core Infrastructure",
+      issuer: "Google",
+      date: "Mar 2025",
+      skills: []
+    },
+    {
+      title: "Introduction to Cloud Computing",
+      issuer: "IBM",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
+      title: "Introduction to Hardware and Operating Systems",
+      issuer: "IBM",
+      date: "Mar 2025",
+      skills: ["Hardware", "Operating Systems"]
+    },
+    {
+      title: "Security Operations Analyst Associate Certified",
+      issuer: "Microsoft",
+      date: "Mar 2025",
+      skills: []
+    },
+    {
+      title: "Write Professional Emails in English",
+      issuer: "Georgia Institute of Technology",
+      date: "Mar 2025",
+      skills: ["Communication"]
+    }
+  ];
+
   return (
     <Layout>
       {/* Header */}
@@ -73,92 +131,20 @@ const Education = () => {
         </div>
       </section>
       
-      {/* Skills & Knowledge Gained */}
-      <section className="py-16 relative">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-            alt="Technology Background"
-            className="w-full h-full object-cover opacity-10"
-          />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <h2 className="text-2xl font-bold mb-8 text-center">Skills Overview</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-xl mb-4 text-primary">Technical Skills</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>Cloud Computing</li>
-                <li>Hardware Knowledge</li>
-                <li>Operating Systems</li>
-                <li>Software Development Basics</li>
-                <li>Security Operations</li>
-                <li>No-Code Solutions</li>
-                <li>Systems Development</li>
-                <li>Database Concepts</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-xl mb-4 text-primary">Professional Skills</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>Project Management</li>
-                <li>Wealth Management</li>
-                <li>Business Communication</li>
-                <li>Professional Email Writing</li>
-                <li>Team Collaboration</li>
-                <li>Business Analysis</li>
-                <li>Time Management</li>
-                <li>Resource Planning</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-xl mb-4 text-primary">Soft Skills & Languages</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>Verbal Communication</li>
-                <li>Presentation Skills</li>
-                <li>Analytical Thinking</li>
-                <li>Problem Solving</li>
-                <li>Attention to Detail</li>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>SQL Basics</li>
-                <li>Python Fundamentals</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Tools & Technologies */}
-      <section className="bg-muted py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold mb-8 text-center">Tools & Technologies</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-xl mb-4 text-primary">Development</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Basic Version Control</li>
-                <li>Cloud Service Platforms</li>
-                <li>AWS</li>
-                <li>Google Cloud</li>
-                <li>IBM Cloud</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="font-semibold text-xl mb-4 text-primary">Business & Productivity</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
-                <li>Google Workspace</li>
-                <li>Microsoft Office Suite</li>
-                <li>Customer Service Platforms</li>
-                <li>Project Management Software</li>
-              </ul>
-            </div>
-          </div>
+      {/* Professional Certifications and Online Courses */}
+      <section className="section-container">
+        <h2 className="text-2xl font-bold mb-8">Professional Certifications and Online Courses</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {certifications.map((cert, index) => (
+            <CertificationCard
+              key={index}
+              title={cert.title}
+              issuer={cert.issuer}
+              date={cert.date}
+              skills={cert.skills}
+              className="h-full"
+            />
+          ))}
         </div>
       </section>
     </Layout>
