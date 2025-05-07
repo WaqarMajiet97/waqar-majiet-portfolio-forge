@@ -2,8 +2,66 @@
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
+import CertificationCard from '@/components/CertificationCard';
 
 const Projects = () => {
+  const certifications = [
+    {
+      title: "Verbal Communications and Presentation Skills",
+      issuer: "Starweaver",
+      date: "Mar 2025",
+      skills: ["Oral Communication"]
+    },
+    {
+      title: "AWS Cloud Technical Essentials",
+      issuer: "Amazon Web Services",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
+      title: "Cloud Computing Foundations",
+      issuer: "IBM",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
+      title: "Introduction to Software, Programming and Databases",
+      issuer: "IBM Skills Network Team",
+      date: "Mar 2025",
+      skills: []
+    },
+    {
+      title: "Google Cloud Fundamentals: Core Infrastructure",
+      issuer: "Google",
+      date: "Mar 2025",
+      skills: []
+    },
+    {
+      title: "Introduction to Cloud Computing",
+      issuer: "IBM",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
+      title: "Introduction to Hardware and Operating Systems",
+      issuer: "IBM",
+      date: "Mar 2025",
+      skills: ["Hardware", "Operating Systems"]
+    },
+    {
+      title: "Security Operations Analyst Associate Certified",
+      issuer: "Microsoft",
+      date: "Mar 2025",
+      skills: []
+    },
+    {
+      title: "Write Professional Emails in English",
+      issuer: "Georgia Institute of Technology",
+      date: "Mar 2025",
+      skills: ["Communication"]
+    }
+  ];
+
   return (
     <Layout>
       {/* Header */}
@@ -15,6 +73,23 @@ const Projects = () => {
               Notable projects and accomplishments that showcase my skills and expertise.
             </p>
           </div>
+        </div>
+      </section>
+      
+      {/* Professional Certifications */}
+      <section className="section-container">
+        <h2 className="text-2xl font-bold mb-8">Professional Certifications</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {certifications.map((cert, index) => (
+            <CertificationCard
+              key={index}
+              title={cert.title}
+              issuer={cert.issuer}
+              date={cert.date}
+              skills={cert.skills}
+              className="h-full"
+            />
+          ))}
         </div>
       </section>
       
