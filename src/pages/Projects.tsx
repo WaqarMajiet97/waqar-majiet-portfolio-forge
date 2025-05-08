@@ -28,13 +28,113 @@ const Projects = () => {
       <section className="section-container">
         <h2 className="text-2xl font-bold mb-8">Projects</h2>
         
+        {/* Volkswagen Application Project */}
+        <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
+          <div className="md:flex">
+            <div className="md:w-2/5">
+              <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  alt="Volkswagen Desktop Application" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
+                  <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Java Desktop Application</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 md:w-3/5">
+              <h3 className="text-xl font-bold mb-2">Volkswagen Desktop Application</h3>
+              <p className="text-gray-600 mb-4">
+                A comprehensive Java desktop application built using Netbeans that provides a platform for customers to browse Volkswagen vehicles, 
+                view pricing information, and apply for vehicle financing.
+              </p>
+              
+              <div className="mb-4">
+                <h4 className="font-medium mb-2">Key Features:</h4>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>Welcoming home page with product introduction</li>
+                  <li>Vehicle catalog with detailed pricing information</li>
+                  <li>Finance application process with document attachment functionality</li>
+                  <li>Validation system for driver's license verification</li>
+                  <li>Data persistence through text file storage</li>
+                  <li>User-friendly interface with intuitive navigation</li>
+                </ul>
+              </div>
+              
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Java</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Netbeans IDE</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Swing UI</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">File I/O</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Form Validation</span>
+              </div>
+              
+              <Button className="mt-2" variant="outline" size="sm">
+                <ExternalLink className="mr-1 h-4 w-4" />
+                View Project Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+        
+        {/* Math Quiz Application Project */}
+        <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
+          <div className="md:flex">
+            <div className="md:w-2/5">
+              <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  alt="Math Quiz Application" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
+                  <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Educational Java Application</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-6 md:w-3/5">
+              <h3 className="text-xl font-bold mb-2">Math Quiz Application</h3>
+              <p className="text-gray-600 mb-4">
+                An educational application designed for Grade 5 students to practice and develop their mathematical skills through 
+                customizable quizzes covering various mathematical operations.
+              </p>
+              
+              <div className="mb-4">
+                <h4 className="font-medium mb-2">Key Features:</h4>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>Customizable quiz types (Addition, Subtraction, Multiplication, Division)</li>
+                  <li>Adjustable quiz length based on user preference</li>
+                  <li>Optional timed quiz mode for added challenge</li>
+                  <li>Age-appropriate interface designed for elementary students</li>
+                  <li>Progress tracking and immediate feedback</li>
+                  <li>Engaging and interactive learning experience</li>
+                </ul>
+              </div>
+              
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Java</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Educational Software</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Mathematics</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">GUI Development</span>
+                <span className="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">Child-Friendly UX</span>
+              </div>
+              
+              <Button className="mt-2" variant="outline" size="sm">
+                <ExternalLink className="mr-1 h-4 w-4" />
+                View Project Demo
+              </Button>
+            </div>
+          </div>
+        </div>
+        
         {/* School Management System Project */}
         <div className="bg-white rounded-lg shadow-sm overflow-hidden mb-12">
           <div className="md:flex">
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                   alt="School Management System Screenshot" 
                   className="w-full h-full object-cover"
                 />
@@ -84,7 +184,7 @@ const Projects = () => {
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  src="https://images.unsplash.com/photo-1612837017391-4b6b7b0bfe1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                   alt="Lottery Game Application Screenshot" 
                   className="w-full h-full object-cover"
                 />
@@ -134,7 +234,7 @@ const Projects = () => {
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                  src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                   alt="Task Management App Screenshot" 
                   className="w-full h-full object-cover"
                 />
