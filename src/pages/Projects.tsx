@@ -33,11 +33,13 @@ const Projects = () => {
           <div className="md:flex">
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
+               
                 <img 
-                  src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Volkswagen Desktop Application" 
-                  className="w-full h-full object-cover"
-                />
+              src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+              alt="Volkswagen Desktop Application" 
+              className="w-full h-full object-cover"
+              />
+
                 <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
                   <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Java Desktop Application</p>
                 </div>
