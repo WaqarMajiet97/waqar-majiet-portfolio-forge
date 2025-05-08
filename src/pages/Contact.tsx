@@ -27,11 +27,17 @@ const Contact = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="bg-primary/5 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
+      <section className="bg-primary/5 py-16" style={{
+        backgroundImage: "url(https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative"
+      }}>
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <h1 className="text-4xl font-bold mb-6 text-white">Contact Me</h1>
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               Have a question or want to work together? Feel free to get in touch.
             </p>
           </div>
@@ -75,7 +81,7 @@ const Contact = () => {
           
           <Map 
             center={{ lat: -34.0476, lng: 18.6168 }} 
-            zoom={13} 
+            zoom={15} 
             className="h-96 rounded-lg shadow-sm" 
           />
         </div>

@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -7,9 +6,11 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Mail } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const ContactForm = () => {
   const { toast } = useToast();
+  const isMobile = useIsMobile();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -30,22 +31,37 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message sent",
-      description: "Thanks for reaching out! I'll get back to you soon.",
-    });
-    
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-    
-    setIsSubmitting(false);
+    try {
+      // For mobile devices, open the email client directly
+      if (isMobile) {
+        const subject = encodeURIComponent(formData.subject);
+        const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`);
+        window.location.href = `mailto:majietwaqar97@gmail.com?subject=${subject}&body=${body}`;
+      } else {
+        // For desktop, you can keep the simulation or implement an actual email sending solution
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+      
+      toast({
+        title: "Message sent",
+        description: "Thanks for reaching out! I'll get back to you soon.",
+      });
+      
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

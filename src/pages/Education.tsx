@@ -64,11 +64,17 @@ const Education = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="bg-primary/5 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl font-bold mb-6">Education</h1>
+      <section className="bg-primary/5 py-16" style={{
+        backgroundImage: "url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        position: "relative"
+      }}>
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <h1 className="text-4xl font-bold mb-6 text-white">Education</h1>
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               My academic journey and professional qualifications
             </p>
           </div>
