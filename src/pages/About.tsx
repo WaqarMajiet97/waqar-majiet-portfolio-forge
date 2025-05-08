@@ -68,37 +68,37 @@ const About = () => {
                 <WorkExperienceCard 
                   company="Condor Green"
                   position="IT: Systems Development Learnership Position"
-                  period="June 2023 - May 2024"
+                  period="01 June 2023 - 31 May 2024"
                 />
                 <WorkExperienceCard 
                   company="Sisonke Engineering and Hydraulics"
                   position="Project Management Learnership Position"
-                  period="July 2021 - July 2022"
+                  period="01 July 2021 - 31 July 2022"
                 />
                 <WorkExperienceCard 
                   company="Amazon Development Centre"
                   position="Customer Service Associate"
-                  period="June 2019 - September 2019"
+                  period="01 June 2019 - 30 September 2019"
                 />
                 <WorkExperienceCard 
                   company="Liberty Life"
                   position="Financial Adviser"
-                  period="March 2019 - May 2019"
+                  period="01 March 2019 - 31 May 2019"
                 />
                 <WorkExperienceCard 
                   company="Old Mutual"
                   position="Trainee Administrator"
-                  period="March 2017 - February 2019"
+                  period="01 March 2017 - 28 February 2019"
                 />
                 <WorkExperienceCard 
                   company="Solutions Experts"
                   position="Debt Review Sales Consultant"
-                  period="January 2017 - February 2017"
+                  period="01 January 2017 - 30 February 2017"
                 />
                 <WorkExperienceCard 
                   company="Radio Holland"
                   position="Holiday Job"
-                  period="December 2015 - December 2015"
+                  period="01 December 2015 - 30 December 2015"
                 />
               </div>
             </div>
