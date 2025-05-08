@@ -43,7 +43,7 @@ const Index = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Explore My Portfolio</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: User, title: "About Me", description: "Learn more about my skills, experience and background", link: "/about", image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+            { icon: User, title: "About Me", description: "Learn more about my skills, experience and background", link: "/about", image: "/lovable-uploads/e91d8362-16c1-4ff4-86c4-f54edb440f07.png" },
             { icon: Briefcase, title: "Projects & Achievements", description: "Explore my Projects and Achievements", link: "/projects", image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
             { icon: GraduationCap, title: "Education", description: "My academic journey and qualifications", link: "/education", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
             { icon: Mail, title: "Contact", description: "Get in touch with me", link: "/contact", image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
