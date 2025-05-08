@@ -24,6 +24,12 @@ const Education = () => {
       skills: ["Cloud Computing"]
     },
     {
+      title: "Developing Applications with Google Cloud: Foundations",
+      issuer: "Google",
+      date: "Mar 2025",
+      skills: ["Cloud Computing"]
+    },
+    {
       title: "Introduction to Software, Programming and Databases",
       issuer: "IBM Skills Network Team",
       date: "Mar 2025",
