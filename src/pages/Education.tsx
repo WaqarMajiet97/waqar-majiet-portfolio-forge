@@ -33,13 +33,13 @@ const Education = () => {
       title: "Introduction to Software, Programming and Databases",
       issuer: "IBM Skills Network Team",
       date: "Mar 2025",
-      skills: []
+      skills: ["IT Basics"]
     },
     {
       title: "Google Cloud Fundamentals: Core Infrastructure",
       issuer: "Google",
       date: "Mar 2025",
-      skills: []
+      skills: ["Cloud Computing]
     },
     {
       title: "Introduction to Cloud Computing",
@@ -57,7 +57,19 @@ const Education = () => {
       title: "Security Operations Analyst Associate Certified",
       issuer: "Microsoft",
       date: "Mar 2025",
-      skills: []
+      skills: ["Cybersecurity"]
+    },
+    {
+      title: "Generative AI: Introduction and Applications",
+      issuer: "IBM",
+      date: "May 2025",
+      skills: ["AI"]
+    },
+    {
+      title: "Generative AI: Prompt Engineering Basics",
+      issuer: "IBM",
+      date: "May 2025",
+      skills: ["AI"]
     },
     {
       title: "Write Professional Emails in English",
