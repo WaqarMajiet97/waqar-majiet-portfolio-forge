@@ -56,7 +56,7 @@ const Education = () => {
     {
       title: "Security Operations Analyst Associate Certified",
       issuer: "Microsoft",
-      date: "Mar 2025",
+      date: "April 2024",
       skills: ["Cybersecurity"]
     },
     {
