@@ -65,7 +65,7 @@ const About = () => {
                  <WorkExperienceCard 
                   company="Capaciti"
                   position="Cloud Associate"
-                  period="20 March 2025 - Present"
+                  period="20 February 2025 - Present"
                 />
                 <WorkExperienceCard 
                   company="Condor Green"
