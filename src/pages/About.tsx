@@ -26,7 +26,7 @@ const About = () => {
           <h1 className="text-4xl font-bold mb-6 text-white">About Me</h1>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-white leading-relaxed">
-              A dedicated and results-driven individual with a blend of strong analytical skills and a creative mindset.
+              Cloud Associate
             </p>
           </div>
         </div>
