@@ -101,19 +101,19 @@ const Education = () => {
               
               <EducationCard
                 institution="African Resources Training Group"
-                degree="Wealth Management National Certificate"
+                degree="Wealth Management National Certificate NQF 5"
                 period="2018-2019"
               />
               
               <EducationCard
                 institution="African Resources Training Group"
-                degree="Wealth Management National Certificate"
+                degree="Wealth Management National Certificate NQF 4"
                 period="2017-2018"
               />
               
               <EducationCard
                 institution="Stellenbosch University"
-                degree="BEng Electrical Engineering"
+                degree="BEng Electrical Engineering EDP"
                 period="2016-2016"
                 completed={false}
               />
