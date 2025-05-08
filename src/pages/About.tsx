@@ -69,7 +69,7 @@ const About = () => {
                 Professional Experience
               </h3>
               <div className="space-y-4">
-                <WorkExperienceCard company="Capaciti" position="Cloud Associate" period="20 February 2025 - Present" />
+                <WorkExperienceCard company="Capaciti" position="Cloud Associate" period="June 2023 - May 2024" />
                 <WorkExperienceCard company="Condor Green" position="Learnership Position" period="June 2023 - May 2024" />
                 <WorkExperienceCard company="Sisonke Engineering and Hydraulics" position="Learnership Position" period="July 2021 - July 2022" />
                 <WorkExperienceCard company="Amazon Development Centre" position="Customer Service Associate" period="June 2019 - September 2019" />
