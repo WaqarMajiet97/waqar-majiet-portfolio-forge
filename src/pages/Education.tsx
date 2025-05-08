@@ -39,7 +39,7 @@ const Education = () => {
       title: "Google Cloud Fundamentals: Core Infrastructure",
       issuer: "Google",
       date: "Mar 2025",
-      skills: ["Cloud Computing]
+      skills: ["Cloud Computing"]
     },
     {
       title: "Introduction to Cloud Computing",
