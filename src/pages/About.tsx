@@ -49,7 +49,7 @@ return (
               <WorkExperienceCard 
                 company="Capaciti"
                 position="Cloud Associate"
-                period="20 March 2025 - Present"
+                period="20 February 2025 - Present"
               />
               <WorkExperienceCard 
                 company="Condor Green"
@@ -80,6 +80,11 @@ return (
                 company="Solutions Experts"
                 position="Debt Review Sales Consultant"
                 period="January 2017 - February 2017"
+              />
+               <WorkExperienceCard 
+                company="Radio Holland"
+                position="Holiday Job"
+                period="December 2015 - December 2015"
               />
             </div>
           </div>
