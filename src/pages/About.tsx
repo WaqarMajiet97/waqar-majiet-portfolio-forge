@@ -38,15 +38,6 @@ const About = () => {
           {/* Left column - Profile */}
           <div className="col-span-1 lg:col-span-2">
             <h2 className="text-2xl font-bold mb-6">Professional Profile</h2>
-          
-            <div className="prose max-w-none">
-              <p className="text-gray-700 mb-4">
-                As a Cloud Associate at Capaciti, I leverage my analytical skills to manage and optimize cloud infrastructure. 
-                I focus on delivering innovative solutions and ensuring seamless cloud operations.
-                My goal is to drive impactful results by leading cloud projects and adapting to the evolving tech landscape.
-                I thrive in dynamic environments, continuously enhancing my cloud computing expertise and collaborating effectively with my team.
-              </p>
-            </div>
 
             {/* Work Experience Section */}
             <div className="mt-12">
