@@ -13,7 +13,7 @@ const Index = () => {
       title: "Security Operations Analyst Associate Certified",
       issuer: "Microsoft",
       date: "Mar 2025",
-      skills: []
+      skills: ["Cybersecurity"]
     },
     {
       title: "AWS Cloud Technical Essentials",
@@ -113,8 +113,7 @@ const Index = () => {
           <div className="relative z-10">
             <h2 className="text-3xl font-bold mb-4 text-white">Interested in Working Together?</h2>
             <p className="text-white/90 max-w-2xl mx-auto mb-6">
-              If you're looking for a dedicated professional with strong analytical skills and a creative mindset, 
-              feel free to reach out to discuss potential opportunities.
+            Looking for an IT professional? Feel free to reach out to discuss potential opportunities.
             </p>
             <Button asChild size="lg" onClick={scrollToTop} variant="secondary">
               <Link to="/contact">Get In Touch</Link>
