@@ -42,7 +42,7 @@ const About = () => {
             <div className="prose max-w-none">
               
               <p className="text-gray-700 mb-4">
-                As a Cloud Associate at Capaciti, I leverage my analytical skills to manage and optimize cloud infrastructure. I focus on delivering innovative solutions and ensuring seamless cloud operations. Thriving in dynamic environments, I continuously enhance my cloud computing expertise while collaborating effectively with my team. My goal is to drive impactful results by leading cloud projects and adapting to the evolving tech landscape.
+                IT Professional focussing on Cloud Solutions Development on various platforms such as AWS, Google Cloud and Microsoft Azure. Experience in languages such as C#, JAVA, Python, HTML. Also. Web Development and Desktop Application Development.
               </p>
             
             </div>
