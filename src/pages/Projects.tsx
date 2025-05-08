@@ -240,11 +240,13 @@ const Projects = () => {
           <div className="md:flex">
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                  alt="Task Management App Screenshot" 
-                  className="w-full h-full object-cover"
-                />
+                
+              <img 
+                src="https://www.timedoctor.com/blog/images/2020/10/task-list-template.jpg" 
+                alt="Lottery Game Application Screenshot" 
+                className="w-full h-full object-cover"
+              />
+
                 <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
                   <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Google Sheets Integration</p>
                 </div>
