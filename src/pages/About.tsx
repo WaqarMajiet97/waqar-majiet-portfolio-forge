@@ -67,12 +67,12 @@ const About = () => {
                 />
                 <WorkExperienceCard 
                   company="Condor Green"
-                  position="Learnership Position"
+                  position="IT: Systems Development Learnership Position"
                   period="June 2023 - May 2024"
                 />
                 <WorkExperienceCard 
                   company="Sisonke Engineering and Hydraulics"
-                  position="Learnership Position"
+                  position="Project Management Learnership Position"
                   period="July 2021 - July 2022"
                 />
                 <WorkExperienceCard 
