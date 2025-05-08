@@ -44,6 +44,7 @@ return (
               <Briefcase className="mr-2 h-5 w-5 text-primary" />
               Professional Experience
             </h3>
+             </div>
             <div className="space-y-4">
               <WorkExperienceCard 
                 company="Capaciti"
