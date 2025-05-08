@@ -81,12 +81,7 @@ return (
                 position="Debt Review Sales Consultant"
                 period="January 2017 - February 2017"
               />
-               <WorkExperienceCard 
-                company="Radio Holland"
-                position="Holiday Job"
-                period="December 2015 - December 2015"
-              />
-            </div>
+            </div>
           </div>
         </div>
       </div>
