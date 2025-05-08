@@ -38,27 +38,22 @@ const About = () => {
           {/* Left column - Profile */}
           <div className="col-span-1 lg:col-span-2">
             <h2 className="text-2xl font-bold mb-6">Professional Profile</h2>
-            
+          
             <div className="prose max-w-none">
-              <p className="text-gray-700 mb-4">
-                I bring a blend of strong analytical skills and a creative mindset to the table. 
-                My ability to synthesize complex information and generate innovative solutions 
-                has been a consistent strength throughout my career.
-              </p>
-              
-              <p className="text-gray-700 mb-4">
-                I thrive in environments that challenge my problem-solving capabilities and allow 
-                me to leverage my keen attention to detail. As a lifelong learner, I am committed 
-                to personal and professional growth, actively seeking opportunities to enhance 
-                my communication skills and team collaboration.
-              </p>
-              
-              <p className="text-gray-700 mb-4">
-                Recognizing the importance of adaptability in today's dynamic work landscape, 
-                I am focused on developing my project management abilities to lead initiatives 
-                more effectively and drive impactful results.
-              </p>
+              <p className="text-gray-700 mb-4">
+                As a Cloud Associate at Capaciti, I leverage my analytical skills to manage and optimize cloud infrastructure. 
+                I focus on delivering innovative solutions and ensuring seamless cloud operations.
+              </p>
+              
+              <p className="text-gray-700 mb-4">
+                I thrive in dynamic environments, continuously enhancing my cloud computing expertise and collaborating effectively with my team.
+              </p>
+              
+              <p className="text-gray-700 mb-4">
+                My goal is to drive impactful results by leading cloud projects and adapting to the evolving tech landscape.
+              </p>
             </div>
+
             
             {/* Work Experience Section */}
             <div className="mt-12">
