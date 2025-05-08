@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl">
                 <img 
-                  src="/lovable-uploads/91d0b0ba-b4e8-43fc-98bf-6c8a8ddc08af.png" 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                   alt="Waqar Majiet" 
                   className="w-full h-full object-cover object-center"
                 />

@@ -12,8 +12,8 @@ const Map = ({
   zoom = 15,
   className = "h-64" 
 }: MapProps) => {
-  // Build the Google Maps URL with the center coordinates
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=${center.lat},${center.lng}&zoom=${zoom}`;
+  // Build the Google Maps embed URL with the correct location
+  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Mitchell's+Plain,+Cape+Town,+South+Africa&zoom=${zoom}`;
   
   return (
     <div className={`bg-white rounded-lg shadow-sm ${className} relative overflow-hidden`}>

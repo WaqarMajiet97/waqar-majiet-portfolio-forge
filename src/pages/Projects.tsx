@@ -7,11 +7,17 @@ const Projects = () => {
   return (
     <Layout>
       {/* Header */}
-      <section className="bg-primary/5 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl font-bold mb-6">Projects and Achievements</h1>
+      <section className="bg-primary/5 py-16" style={{
+        backgroundImage: "url(https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)",
+        backgroundSize: "cover", 
+        backgroundPosition: "center",
+        position: "relative"
+      }}>
+        <div className="absolute inset-0 bg-primary/70"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
+          <h1 className="text-4xl font-bold mb-6 text-white">Projects and Achievements</h1>
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               Notable projects and accomplishments that showcase my skills and expertise.
             </p>
           </div>
