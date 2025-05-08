@@ -17,8 +17,7 @@ const HeroSection = () => {
               Welcome to <span className="text-primary">Waqar Majiet's</span> Portfolio
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-              A dedicated and results-driven individual with strong analytical skills and a creative mindset,
-              focused on developing professional growth and driving impactful results.
+              Cloud Associate
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
