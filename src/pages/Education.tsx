@@ -121,7 +121,7 @@ const Education = () => {
               <EducationCard
                 institution="Spine Road High School"
                 degree="Matric"
-                period="2015"
+                period="2010-2015"
                 subjects={[
                   { name: "English Home Language", percentage: "77%" },
                   { name: "Afrikaans First Additional Language", percentage: "70%" },
