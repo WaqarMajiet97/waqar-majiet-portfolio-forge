@@ -95,7 +95,7 @@ const Education = () => {
               
               <EducationCard
                 institution="LFP"
-                degree="Project Management National Certificate"
+                degree="Project Management National Certificate NQF 4"
                 period="2021-2022"
               />
               
