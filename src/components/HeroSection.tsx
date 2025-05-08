@@ -17,7 +17,7 @@ const HeroSection = () => {
               Welcome to <span className="text-primary">Waqar Majiet's</span> Portfolio
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-              Cloud Associate
+              Cloud Associate at Capaciti
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg">
