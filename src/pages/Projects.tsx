@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
@@ -33,16 +32,11 @@ const Projects = () => {
           <div className="md:flex">
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
-              
-              <img 
-                src="https://images.carexpert.com.au/resize/3000/-/app/uploads/2022/08/2022-Volkswagen-Polo-Style-09-DSC00643.jpg" 
-                alt="Volkswagen Desktop Application" 
-                className="w-full h-full object-cover"
-               
-              alt="Volkswagen Desktop Application" 
-              className="w-full h-full object-cover"
-              />
-
+                <img 
+                  src="https://images.carexpert.com.au/resize/3000/-/app/uploads/2022/08/2022-Volkswagen-Polo-Style-09-DSC00643.jpg" 
+                  alt="Volkswagen Desktop Application" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
                   <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Java Desktop Application</p>
                 </div>
@@ -188,13 +182,11 @@ const Projects = () => {
           <div className="md:flex">
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
-          
-              <img 
-                src="https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png" 
-                alt="Lottery Game Application Screenshot" 
-                className="w-full h-full object-cover"
-              />
-
+                <img 
+                  src="https://logolook.net/wp-content/uploads/2022/11/Java-Logo.png" 
+                  alt="Lottery Game Application Screenshot" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
                   <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Java Application</p>
                 </div>
@@ -240,13 +232,11 @@ const Projects = () => {
           <div className="md:flex">
             <div className="md:w-2/5">
               <div className="h-64 md:h-full bg-gray-100 relative overflow-hidden">
-                
-              <img 
-                src="https://www.timedoctor.com/blog/images/2020/10/task-list-template.jpg" 
-                alt="Lottery Game Application Screenshot" 
-                className="w-full h-full object-cover"
-              />
-
+                <img 
+                  src="https://www.timedoctor.com/blog/images/2020/10/task-list-template.jpg" 
+                  alt="Lottery Game Application Screenshot" 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
                   <p className="text-primary font-medium px-4 py-2 bg-white/80 rounded-md">Google Sheets Integration</p>
                 </div>
