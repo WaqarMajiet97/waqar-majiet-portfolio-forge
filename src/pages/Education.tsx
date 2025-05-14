@@ -72,7 +72,7 @@ const Education = () => {
       issuer: "Microsoft",
       date: "April 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "/documents/WaqarMajiet-8950_Microsoft_Learn.pdf"
+      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/ESPQKybI0t5PkY8WGiDzjx8BcwBIV2I1kGQLxkSE61-Wag?e=zDStkl"
     },
     {
       title: "Generative AI: Introduction and Applications",
