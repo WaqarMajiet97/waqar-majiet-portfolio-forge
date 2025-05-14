@@ -78,6 +78,24 @@ const Education = () => {
       skills: ["AI"]
     },
     {
+      title: "Emotional Intelligence",
+      issuer: "Arizona State University",
+      date: "May 2025",
+      skills: ["Emotional Intelligence"]
+    },
+    {
+      title: "Developing Interpersonal Skills",
+      issuer: "IBM",
+      date: "May 2025",
+      skills: ["Interpersonal Skills"]
+    },
+    {
+      title: "Work Smarter, Not Harder: Time Management for Personal & Professional Productivity",
+      issuer: "UCI",
+      date: "May 2025",
+      skills: ["Time Management"]
+    },
+    {
       title: "Write Professional Emails in English",
       issuer: "Georgia Institute of Technology",
       date: "Mar 2025",
