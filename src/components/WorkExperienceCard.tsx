@@ -20,9 +20,9 @@ const WorkExperienceCard = ({ company, position, period, description }: WorkExpe
           <div>
             <h4 className="font-semibold text-base mb-1">{position}</h4>
             <p className="text-primary font-medium text-sm mb-1">{company}</p>
-            <p className="text-gray-500 text-xs">{period}</p>
+            <p className="text-muted-foreground text-xs">{period}</p>
             {description && (
-              <p className="text-gray-600 text-sm mt-2">{description}</p>
+              <p className="text-muted-foreground text-sm mt-2">{description}</p>
             )}
           </div>
         </div>

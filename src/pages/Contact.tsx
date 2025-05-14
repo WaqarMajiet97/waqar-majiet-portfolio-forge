@@ -65,62 +65,65 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Contact Information and Form */}
-      <section className="section-container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact Information (Left Side) */}
-          <div className="lg:col-span-1 space-y-6">
-            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+      {/* Contact Form and Information */}
+      <section className="section-container py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Contact Form */}
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
+              <ContactForm />
+            </div>
             
-            {contactInfo.map((info) => (
-              <Card key={info.key} className="card-hover h-full overflow-hidden">
-                <CardContent className="flex flex-col items-center text-center pt-6">
-                  <div className="bg-primary/10 p-3 rounded-full inline-flex mb-4">
-                    <info.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-medium mb-3">{info.title}</h3>
-                  
-                  <Button 
-                    variant="outline"
-                    size="sm"
-                    className="mb-3"
-                    onClick={() => toggleInfo(info.key)}
-                  >
-                    {info.visible ? (
-                      <>
-                        <EyeOff className="mr-2 h-4 w-4" />
-                        Hide Details
-                      </>
-                    ) : (
-                      <>
-                        <Eye className="mr-2 h-4 w-4" />
-                        Show Details
-                      </>
-                    )}
-                  </Button>
-                  
-                  {info.visible && (
-                    <div className="space-y-1 mt-2 animate-fade-in">
-                      {info.details.map((detail, i) => (
-                        <p key={i} className="text-muted-foreground">{detail}</p>
-                      ))}
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          {/* Contact Form (Right Side) */}
-          <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
-            <ContactForm />
+            {/* Contact Information */}
+            <div className="space-y-6">
+              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {contactInfo.map((info) => (
+                  <Card key={info.key} className="card-hover h-full overflow-hidden">
+                    <CardContent className="flex flex-col items-center text-center pt-6">
+                      <div className="bg-primary/10 p-3 rounded-full inline-flex mb-4">
+                        <info.icon className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-medium mb-3">{info.title}</h3>
+                      
+                      <Button 
+                        variant="outline"
+                        size="sm"
+                        className="mb-3"
+                        onClick={() => toggleInfo(info.key)}
+                      >
+                        {info.visible ? (
+                          <>
+                            <EyeOff className="mr-2 h-4 w-4" />
+                            Hide Details
+                          </>
+                        ) : (
+                          <>
+                            <Eye className="mr-2 h-4 w-4" />
+                            Show Details
+                          </>
+                        )}
+                      </Button>
+                      
+                      {info.visible && (
+                        <div className="space-y-1 mt-2 animate-fade-in">
+                          {info.details.map((detail, i) => (
+                            <p key={i} className="text-muted-foreground">{detail}</p>
+                          ))}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
       
       {/* Map */}
-      <section className="mt-16 bg-muted py-16">
+      <section className="bg-muted py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold">Located in Cape Town</h2>
