@@ -169,7 +169,7 @@ const Education = () => {
                   institution="CTU Training Solutions"
                   degree="National Certificate NQF 5: Systems Development"
                   period="2023-2024"
-                  documentPath="/documents/Waqar_Majiet_Confirmation_Letter.pdf"
+                  documentPath="file:///C:/Users/New%20User/OneDrive%20-%20Cape%20IT%20Initiative/Attachments/majiet%202.pdf"
                 />
                 
                 <EducationCard
@@ -201,7 +201,7 @@ const Education = () => {
                   institution="Spine Road High School"
                   degree="Matric"
                   period="2010-2015"
-                  documentPath="/documents/majiet_2.pdf"
+                  documentPath="file:///C:/Users/New%20User/OneDrive%20-%20Cape%20IT%20Initiative/Attachments/Waqar%20Majiet%20confirmation%20letter.pdf"
                   subjects={[
                     { name: "English Home Language", percentage: "77%" },
                     { name: "Afrikaans First Additional Language", percentage: "70%" },
