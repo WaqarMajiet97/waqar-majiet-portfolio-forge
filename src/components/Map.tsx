@@ -8,12 +8,12 @@ interface MapProps {
 }
 
 const Map = ({ 
-  center = { lat: -34.0476, lng: 18.6168 }, // Default coordinates for Mitchell's Plain
-  zoom = 15,
+  center = { lat: -33.9249, lng: 18.4241 }, // Default coordinates for Cape Town
+  zoom = 13,
   className = "h-64" 
 }: MapProps) => {
   // Build the Google Maps embed URL with the correct location
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Mitchell's+Plain,+Cape+Town,+South+Africa&zoom=${zoom}`;
+  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Cape+Town,+South+Africa&zoom=${zoom}`;
   
   return (
     <div className={`bg-white rounded-lg shadow-sm ${className} relative overflow-hidden`}>

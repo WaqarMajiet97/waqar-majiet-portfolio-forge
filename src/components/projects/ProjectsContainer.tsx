@@ -5,8 +5,7 @@ import { projects } from '@/data/projectsData';
 
 const ProjectsContainer = () => {
   return (
-    <section className="section-container">
-      <h2 className="text-2xl font-bold mb-8">Projects</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
       {projects.map((project, index) => (
         <ProjectCard
           key={index}
@@ -19,7 +18,7 @@ const ProjectsContainer = () => {
           imageLabel={project.imageLabel}
         />
       ))}
-    </section>
+    </div>
   );
 };
 

@@ -1,26 +1,47 @@
 
+import { useState } from 'react';
 import Layout from '@/components/Layout';
 import ContactForm from '@/components/ContactForm';
 import Map from '@/components/Map';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Phone, Mail, MapPin, Eye, EyeOff } from 'lucide-react';
 
 const Contact = () => {
+  const [visibleInfo, setVisibleInfo] = useState({
+    phone: false,
+    email: false,
+    address: false
+  });
+  
+  const toggleInfo = (key: 'phone' | 'email' | 'address') => {
+    setVisibleInfo(prev => ({
+      ...prev,
+      [key]: !prev[key]
+    }));
+  };
+
   const contactInfo = [
     {
+      key: 'phone' as const,
       icon: Phone,
       title: "Phone",
       details: ["+27 69 497 9617", "+27 72 689 1205"],
+      visible: visibleInfo.phone
     },
     {
+      key: 'email' as const,
       icon: Mail,
       title: "Email",
       details: ["majietwaqar97@gmail.com"],
+      visible: visibleInfo.email
     },
     {
+      key: 'address' as const,
       icon: MapPin,
       title: "Address",
       details: ["3 Diana Close, Lost City, Tafelsig", "Mitchell's Plain, Cape Town, 7785"],
+      visible: visibleInfo.address
     },
   ];
 
@@ -44,30 +65,57 @@ const Contact = () => {
         </div>
       </section>
       
-      {/* Contact Information */}
+      {/* Contact Information and Form */}
       <section className="section-container">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          {contactInfo.map((info, index) => (
-            <Card key={index} className="card-hover h-full">
-              <CardContent className="flex flex-col items-center text-center pt-6">
-                <div className="bg-primary/10 p-3 rounded-full inline-flex mb-4">
-                  <info.icon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-medium mb-3">{info.title}</h3>
-                <div className="space-y-1">
-                  {info.details.map((detail, i) => (
-                    <p key={i} className="text-gray-600">{detail}</p>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
-        {/* Contact Form */}
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold mb-8 text-center">Send Me a Message</h2>
-          <ContactForm />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Contact Information (Left Side) */}
+          <div className="lg:col-span-1 space-y-6">
+            <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+            
+            {contactInfo.map((info) => (
+              <Card key={info.key} className="card-hover h-full overflow-hidden">
+                <CardContent className="flex flex-col items-center text-center pt-6">
+                  <div className="bg-primary/10 p-3 rounded-full inline-flex mb-4">
+                    <info.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-medium mb-3">{info.title}</h3>
+                  
+                  <Button 
+                    variant="outline"
+                    size="sm"
+                    className="mb-3"
+                    onClick={() => toggleInfo(info.key)}
+                  >
+                    {info.visible ? (
+                      <>
+                        <EyeOff className="mr-2 h-4 w-4" />
+                        Hide Details
+                      </>
+                    ) : (
+                      <>
+                        <Eye className="mr-2 h-4 w-4" />
+                        Show Details
+                      </>
+                    )}
+                  </Button>
+                  
+                  {info.visible && (
+                    <div className="space-y-1 mt-2 animate-fade-in">
+                      {info.details.map((detail, i) => (
+                        <p key={i} className="text-muted-foreground">{detail}</p>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          {/* Contact Form (Right Side) */}
+          <div className="lg:col-span-2">
+            <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
+            <ContactForm />
+          </div>
         </div>
       </section>
       
@@ -76,12 +124,12 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold">Located in Cape Town</h2>
-            <p className="text-gray-600 mt-2">Mitchell's Plain, Cape Town, South Africa</p>
+            <p className="text-muted-foreground mt-2">Cape Town, South Africa</p>
           </div>
           
           <Map 
-            center={{ lat: -34.0476, lng: 18.6168 }} 
-            zoom={15} 
+            center={{ lat: -33.9249, lng: 18.4241 }} 
+            zoom={13} 
             className="h-96 rounded-lg shadow-sm" 
           />
         </div>

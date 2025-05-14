@@ -1,9 +1,14 @@
 
+import { useState } from 'react';
 import Layout from '@/components/Layout';
 import ProjectHeader from '@/components/projects/ProjectHeader';
 import ProjectsContainer from '@/components/projects/ProjectsContainer';
+import { Button } from '@/components/ui/button';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const Projects = () => {
+  const [showProjects, setShowProjects] = useState(false);
+  
   return (
     <Layout>
       <ProjectHeader 
@@ -11,7 +16,31 @@ const Projects = () => {
         description="Notable projects and accomplishments that showcase my skills and expertise."
         backgroundImage="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
       />
-      <ProjectsContainer />
+      
+      <div className="section-container">
+        <div className="flex justify-center mb-8">
+          <Button 
+            onClick={() => setShowProjects(!showProjects)}
+            variant="outline" 
+            size="lg"
+            className="hover-scale group min-w-[200px]"
+          >
+            {showProjects ? (
+              <>
+                <ChevronUp className="mr-2 h-5 w-5 transition-transform" />
+                Hide Projects
+              </>
+            ) : (
+              <>
+                <ChevronDown className="mr-2 h-5 w-5 transition-transform" />
+                View Projects
+              </>
+            )}
+          </Button>
+        </div>
+        
+        {showProjects && <ProjectsContainer />}
+      </div>
     </Layout>
   );
 };

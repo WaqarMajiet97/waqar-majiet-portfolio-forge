@@ -1,7 +1,10 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ExternalLink } from 'lucide-react';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
 interface ProjectCardProps {
   title: string;
@@ -22,68 +25,111 @@ const ProjectCard = ({
   imageAlt,
   imageLabel,
 }: ProjectCardProps) => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   
   return (
-    <div 
-      className="bg-card rounded-lg shadow-sm overflow-hidden mb-12 border border-border hover-lift transition-all duration-500"
+    <Card 
+      className="overflow-hidden hover-lift transition-all duration-300 h-full"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="md:flex">
-        <div className="md:w-2/5">
-          <div className="h-64 md:h-full bg-muted relative overflow-hidden">
-            <img 
-              src={image} 
-              alt={imageAlt} 
-              className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
-            />
-            <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
-              <p className="text-primary font-medium px-4 py-2 bg-background/80 rounded-md">{imageLabel}</p>
-            </div>
-          </div>
-        </div>
-        <div className={`p-6 md:w-3/5 transition-all duration-300 ${isHovered ? 'bg-accent/5' : ''}`}>
-          <h3 className="text-xl font-bold mb-2 text-foreground">{title}</h3>
-          <p className="text-muted-foreground mb-4">{description}</p>
-          
-          <div className="mb-4">
-            <h4 className="font-medium mb-2 text-foreground">Key Features:</h4>
-            <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-              {features.map((feature, index) => (
-                <li key={index} className={`transition-all duration-300 ${isHovered ? 'translate-x-2' : ''}`}>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div className="flex flex-wrap gap-2 mb-4">
-            {technologies.map((tech, index) => (
-              <span 
-                key={index} 
-                className={`bg-primary/10 text-primary text-xs px-2 py-1 rounded-full transition-all duration-300 ${
-                  isHovered ? 'bg-primary/20' : ''
-                }`}
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-          
-          <Button 
-            className={`mt-2 hover-scale transition-all duration-300 ${
-              isHovered ? 'bg-primary text-white' : ''
-            }`} 
-            variant={isHovered ? "default" : "outline"} 
-            size="sm"
-          >
-            <ExternalLink className="mr-1 h-4 w-4" />
-            View Project Demo
-          </Button>
+      <div className="h-48 overflow-hidden relative">
+        <img 
+          src={image} 
+          alt={imageAlt} 
+          className={`w-full h-full object-cover transition-transform duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
+        />
+        <div className="absolute inset-0 bg-primary/10 flex items-center justify-center">
+          <p className="text-primary font-medium px-4 py-2 bg-background/80 rounded-md">{imageLabel}</p>
         </div>
       </div>
-    </div>
+      
+      <CardHeader className="pb-2">
+        <CardTitle className="text-lg text-foreground">{title}</CardTitle>
+      </CardHeader>
+      
+      <CardContent className="pb-3">
+        <p className="text-muted-foreground text-sm mb-3">{description}</p>
+        
+        <div className="flex flex-wrap gap-2 mb-3">
+          {technologies.slice(0, 3).map((tech, index) => (
+            <Badge 
+              key={index} 
+              variant="outline" 
+              className="bg-primary/5 text-primary text-xs"
+            >
+              {tech}
+            </Badge>
+          ))}
+          {technologies.length > 3 && (
+            <Badge variant="outline" className="bg-primary/5 text-primary text-xs">
+              +{technologies.length - 3} more
+            </Badge>
+          )}
+        </div>
+      </CardContent>
+      
+      <CardFooter className="flex flex-col items-stretch pt-0">
+        <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
+          <CollapsibleTrigger asChild>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="mb-3 w-full justify-center"
+            >
+              {isOpen ? (
+                <>
+                  <ChevronUp className="mr-2 h-4 w-4" />
+                  Hide Details
+                </>
+              ) : (
+                <>
+                  <ChevronDown className="mr-2 h-4 w-4" />
+                  View Details
+                </>
+              )}
+            </Button>
+          </CollapsibleTrigger>
+          
+          <CollapsibleContent className="space-y-4 animate-accordion-down">
+            <div>
+              <h4 className="font-medium mb-2 text-sm text-foreground">Key Features:</h4>
+              <ul className="list-disc pl-5 space-y-1 text-xs text-muted-foreground">
+                {features.map((feature, index) => (
+                  <li key={index}>{feature}</li>
+                ))}
+              </ul>
+            </div>
+            
+            {technologies.length > 0 && (
+              <div>
+                <h4 className="font-medium mb-2 text-sm text-foreground">Technologies:</h4>
+                <div className="flex flex-wrap gap-2">
+                  {technologies.map((tech, index) => (
+                    <Badge 
+                      key={index} 
+                      variant="outline" 
+                      className="bg-primary/5 text-primary text-xs"
+                    >
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            <Button 
+              className="w-full hover-scale" 
+              size="sm"
+            >
+              <ExternalLink className="mr-2 h-4 w-4" />
+              View Project Demo
+            </Button>
+          </CollapsibleContent>
+        </Collapsible>
+      </CardFooter>
+    </Card>
   );
 };
 

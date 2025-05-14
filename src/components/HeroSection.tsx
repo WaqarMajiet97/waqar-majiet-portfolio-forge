@@ -23,10 +23,10 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-center gap-8">
           <div className={`w-full lg:w-2/3 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight mb-6">
               Welcome to <span className="text-primary hover-scale inline-block">Waqar Majiet's</span> Portfolio
             </h1>
-            <p className={`text-lg text-gray-600 mb-8 max-w-2xl ${isVisible ? 'animate-fade-in-delay-1' : 'opacity-0'}`}>
+            <p className={`text-lg text-foreground mb-8 max-w-2xl ${isVisible ? 'animate-fade-in-delay-1' : 'opacity-0'}`}>
               Cloud Associate at Capaciti
             </p>
             <div className={`flex flex-col sm:flex-row gap-4 ${isVisible ? 'animate-fade-in-delay-2' : 'opacity-0'}`}>

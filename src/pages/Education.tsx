@@ -1,9 +1,15 @@
 
+import { useState } from 'react';
 import Layout from '@/components/Layout';
 import EducationCard from '@/components/EducationCard';
 import CertificationCard from '@/components/CertificationCard';
+import { Button } from '@/components/ui/button';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const Education = () => {
+  const [showEducation, setShowEducation] = useState(false);
+  const [showCertifications, setShowCertifications] = useState(false);
+  
   const certifications = [
     {
       title: "Verbal Communications and Presentation Skills",
@@ -103,73 +109,117 @@ const Education = () => {
       <section className="section-container">
         <div className="space-y-12">
           <div>
-            <h2 className="text-2xl font-bold mb-8">Academic & Professional Education</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <EducationCard
-                institution="CTU Training Solutions"
-                degree="National Certificate NQF 5: Systems Development"
-                period="2023-2024"
-              />
-              
-              <EducationCard
-                institution="LFP"
-                degree="Project Management National Certificate NQF 4"
-                period="2021-2022"
-              />
-              
-              <EducationCard
-                institution="African Resources Training Group"
-                degree="Wealth Management National Certificate NQF 5"
-                period="2018-2019"
-              />
-              
-              <EducationCard
-                institution="African Resources Training Group"
-                degree="Wealth Management National Certificate NQF 4"
-                period="2017-2018"
-              />
-              
-              <EducationCard
-                institution="Stellenbosch University"
-                degree="BEng Electrical Engineering EDP"
-                period="2016-2016"
-                completed={false}
-              />
-              
-              <EducationCard
-                institution="Spine Road High School"
-                degree="Matric"
-                period="2010-2015"
-                subjects={[
-                  { name: "English Home Language", percentage: "77%" },
-                  { name: "Afrikaans First Additional Language", percentage: "70%" },
-                  { name: "Mathematics", percentage: "64%" },
-                  { name: "Life Orientation", percentage: "83%" },
-                  { name: "Geography", percentage: "84%" },
-                  { name: "Life Sciences", percentage: "75%" },
-                  { name: "Physical Sciences", percentage: "63%" }
-                ]}
-              />
+            <div className="flex justify-between items-center mb-8">
+              <h2 className="text-2xl font-bold">Academic & Professional Education</h2>
+              <Button 
+                onClick={() => setShowEducation(!showEducation)}
+                variant="outline"
+                className="hover-scale group"
+              >
+                {showEducation ? (
+                  <>
+                    <ChevronUp className="mr-2 h-4 w-4" />
+                    Hide Education
+                  </>
+                ) : (
+                  <>
+                    <ChevronDown className="mr-2 h-4 w-4" />
+                    View Education
+                  </>
+                )}
+              </Button>
             </div>
+            
+            {showEducation && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
+                <EducationCard
+                  institution="CTU Training Solutions"
+                  degree="National Certificate NQF 5: Systems Development"
+                  period="2023-2024"
+                />
+                
+                <EducationCard
+                  institution="LFP"
+                  degree="Project Management National Certificate NQF 4"
+                  period="2021-2022"
+                />
+                
+                <EducationCard
+                  institution="African Resources Training Group"
+                  degree="Wealth Management National Certificate NQF 5"
+                  period="2018-2019"
+                />
+                
+                <EducationCard
+                  institution="African Resources Training Group"
+                  degree="Wealth Management National Certificate NQF 4"
+                  period="2017-2018"
+                />
+                
+                <EducationCard
+                  institution="Stellenbosch University"
+                  degree="BEng Electrical Engineering EDP"
+                  period="2016-2016"
+                  completed={false}
+                />
+                
+                <EducationCard
+                  institution="Spine Road High School"
+                  degree="Matric"
+                  period="2010-2015"
+                  subjects={[
+                    { name: "English Home Language", percentage: "77%" },
+                    { name: "Afrikaans First Additional Language", percentage: "70%" },
+                    { name: "Mathematics", percentage: "64%" },
+                    { name: "Life Orientation", percentage: "83%" },
+                    { name: "Geography", percentage: "84%" },
+                    { name: "Life Sciences", percentage: "75%" },
+                    { name: "Physical Sciences", percentage: "63%" }
+                  ]}
+                />
+              </div>
+            )}
           </div>
         </div>
       </section>
       
       {/* Professional Certifications and Online Courses */}
       <section className="section-container">
-        <h2 className="text-2xl font-bold mb-8">Professional Certifications and Online Courses</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {certifications.map((cert, index) => (
-            <CertificationCard
-              key={index}
-              title={cert.title}
-              issuer={cert.issuer}
-              date={cert.date}
-              skills={cert.skills}
-              className="h-full"
-            />
-          ))}
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold">Professional Certifications and Online Courses</h2>
+          <Button 
+            onClick={() => setShowCertifications(!showCertifications)}
+            variant="outline"
+            className="hover-scale group"
+          >
+            {showCertifications ? (
+              <>
+                <ChevronUp className="mr-2 h-4 w-4" />
+                Hide Certifications
+              </>
+            ) : (
+              <>
+                <ChevronDown className="mr-2 h-4 w-4" />
+                View Certifications
+              </>
+            )}
+          </Button>
         </div>
+        
+        {showCertifications && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-in">
+            {certifications.map((cert, index) => (
+              <CertificationCard
+                key={index}
+                title={cert.title}
+                issuer={cert.issuer}
+                date={cert.date}
+                skills={cert.skills}
+                className="h-full"
+              />
+            ))}
+          </div>
+        )}
       </section>
     </Layout>
   );
