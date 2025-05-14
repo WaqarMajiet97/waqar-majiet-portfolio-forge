@@ -2,6 +2,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { FileText } from 'lucide-react';
 
 interface EducationCardProps {
   institution: string;
@@ -10,6 +12,7 @@ interface EducationCardProps {
   subjects?: Array<{ name: string; percentage?: string }>;
   completed?: boolean;
   className?: string;
+  documentName?: string;
 }
 
 const EducationCard = ({ 
@@ -18,8 +21,14 @@ const EducationCard = ({
   period, 
   subjects, 
   completed = true,
-  className 
+  className,
+  documentName
 }: EducationCardProps) => {
+  
+  const openDocument = (docName: string) => {
+    window.open(`/documents/${docName}.pdf`, '_blank');
+  };
+  
   return (
     <Card className={cn("card-hover h-full", className)}>
       <CardHeader>
@@ -43,6 +52,18 @@ const EducationCard = ({
               </div>
             ))}
           </div>
+        )}
+        
+        {documentName && (
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="mt-4 w-full"
+            onClick={() => openDocument(documentName)}
+          >
+            <FileText className="mr-2 h-4 w-4" />
+            View Certificate
+          </Button>
         )}
       </CardContent>
     </Card>

@@ -73,68 +73,68 @@ const Contact = () => {
             <div>
               <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
               <ContactForm />
-            </div>
-            
-            {/* Contact Information */}
-            <div className="space-y-6">
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              
+              {/* Contact Information - Now vertical list */}
+              <div className="mt-8 space-y-4">
+                <h3 className="text-xl font-medium mb-4">Contact Information</h3>
+                
                 {contactInfo.map((info) => (
-                  <Card key={info.key} className="card-hover h-full overflow-hidden">
-                    <CardContent className="flex flex-col items-center text-center pt-6">
-                      <div className="bg-primary/10 p-3 rounded-full inline-flex mb-4">
-                        <info.icon className="h-6 w-6 text-primary" />
-                      </div>
-                      <h3 className="text-lg font-medium mb-3">{info.title}</h3>
-                      
-                      <Button 
-                        variant="outline"
-                        size="sm"
-                        className="mb-3"
-                        onClick={() => toggleInfo(info.key)}
-                      >
-                        {info.visible ? (
-                          <>
-                            <EyeOff className="mr-2 h-4 w-4" />
-                            Hide Details
-                          </>
-                        ) : (
-                          <>
-                            <Eye className="mr-2 h-4 w-4" />
-                            Show Details
-                          </>
-                        )}
-                      </Button>
-                      
-                      {info.visible && (
-                        <div className="space-y-1 mt-2 animate-fade-in">
-                          {info.details.map((detail, i) => (
-                            <p key={i} className="text-muted-foreground">{detail}</p>
-                          ))}
+                  <Card key={info.key} className="overflow-hidden">
+                    <CardContent className="p-4">
+                      <div className="flex items-center">
+                        <div className="bg-primary/10 p-3 rounded-full inline-flex mr-4">
+                          <info.icon className="h-5 w-5 text-primary" />
                         </div>
-                      )}
+                        
+                        <div className="flex-grow">
+                          <h4 className="font-medium">{info.title}</h4>
+                          
+                          <div className="flex items-center justify-between mt-1">
+                            <Button 
+                              variant="outline"
+                              size="sm"
+                              className="text-xs"
+                              onClick={() => toggleInfo(info.key)}
+                            >
+                              {info.visible ? (
+                                <>
+                                  <EyeOff className="mr-1 h-3 w-3" />
+                                  Hide
+                                </>
+                              ) : (
+                                <>
+                                  <Eye className="mr-1 h-3 w-3" />
+                                  Show
+                                </>
+                              )}
+                            </Button>
+                            
+                            {info.visible && (
+                              <div className="text-right ml-4 text-sm text-muted-foreground animate-fade-in">
+                                {info.details.map((detail, i) => (
+                                  <p key={i}>{detail}</p>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
               </div>
             </div>
+            
+            {/* Map - moved to the right column */}
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Located in Cape Town</h2>
+              <Map 
+                center={{ lat: -33.9249, lng: 18.4241 }} 
+                zoom={13} 
+                className="h-[500px] rounded-lg shadow-sm" 
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      
-      {/* Map */}
-      <section className="bg-muted py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold">Located in Cape Town</h2>
-            <p className="text-muted-foreground mt-2">Cape Town, South Africa</p>
-          </div>
-          
-          <Map 
-            center={{ lat: -33.9249, lng: 18.4241 }} 
-            zoom={13} 
-            className="h-96 rounded-lg shadow-sm" 
-          />
         </div>
       </section>
     </Layout>

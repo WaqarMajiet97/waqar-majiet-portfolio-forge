@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import { Button } from '@/components/ui/button';
 
 interface ProjectCardProps {
   title: string;
@@ -118,14 +118,6 @@ const ProjectCard = ({
                 </div>
               </div>
             )}
-            
-            <Button 
-              className="w-full hover-scale" 
-              size="sm"
-            >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              View Project Demo
-            </Button>
           </CollapsibleContent>
         </Collapsible>
       </CardFooter>
