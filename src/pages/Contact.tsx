@@ -67,17 +67,12 @@ const Contact = () => {
       
       {/* Contact Form and Information */}
       <section className="section-container py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Contact Form */}
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 gap-8">
+            {/* Contact Information - Now first as requested */}
             <div>
-              <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
-              <ContactForm />
-              
-              {/* Contact Information - Now vertical list */}
-              <div className="mt-8 space-y-4">
-                <h3 className="text-xl font-medium mb-4">Contact Information</h3>
-                
+              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+              <div className="space-y-4">
                 {contactInfo.map((info) => (
                   <Card key={info.key} className="overflow-hidden">
                     <CardContent className="p-4">
@@ -89,11 +84,11 @@ const Contact = () => {
                         <div className="flex-grow">
                           <h4 className="font-medium">{info.title}</h4>
                           
-                          <div className="flex items-center justify-between mt-1">
+                          <div className="flex items-center mt-1">
                             <Button 
                               variant="outline"
                               size="sm"
-                              className="text-xs"
+                              className="text-xs mr-4"
                               onClick={() => toggleInfo(info.key)}
                             >
                               {info.visible ? (
@@ -110,7 +105,7 @@ const Contact = () => {
                             </Button>
                             
                             {info.visible && (
-                              <div className="text-right ml-4 text-sm text-muted-foreground animate-fade-in">
+                              <div className="text-sm text-muted-foreground animate-fade-in">
                                 {info.details.map((detail, i) => (
                                   <p key={i}>{detail}</p>
                                 ))}
@@ -125,7 +120,13 @@ const Contact = () => {
               </div>
             </div>
             
-            {/* Map - moved to the right column */}
+            {/* Contact Form - Now second as requested */}
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
+              <ContactForm />
+            </div>
+            
+            {/* Map - Now third/last as requested */}
             <div>
               <h2 className="text-2xl font-bold mb-6">Located in Cape Town</h2>
               <Map 

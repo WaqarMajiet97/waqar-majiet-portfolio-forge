@@ -13,6 +13,7 @@ interface EducationCardProps {
   completed?: boolean;
   className?: string;
   documentName?: string;
+  documentPath?: string;
 }
 
 const EducationCard = ({ 
@@ -22,11 +23,16 @@ const EducationCard = ({
   subjects, 
   completed = true,
   className,
-  documentName
+  documentName,
+  documentPath
 }: EducationCardProps) => {
   
-  const openDocument = (docName: string) => {
-    window.open(`/documents/${docName}.pdf`, '_blank');
+  const openDocument = () => {
+    if (documentPath) {
+      window.open(documentPath, '_blank');
+    } else if (documentName) {
+      window.open(`/documents/${documentName.replace(/ /g, '_')}.pdf`, '_blank');
+    }
   };
   
   return (
@@ -54,12 +60,12 @@ const EducationCard = ({
           </div>
         )}
         
-        {documentName && (
+        {(documentName || documentPath) && (
           <Button 
             variant="outline" 
             size="sm" 
             className="mt-4 w-full"
-            onClick={() => openDocument(documentName)}
+            onClick={openDocument}
           >
             <FileText className="mr-2 h-4 w-4" />
             View Certificate

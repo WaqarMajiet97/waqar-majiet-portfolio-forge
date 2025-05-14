@@ -15,91 +15,106 @@ const Education = () => {
       title: "Verbal Communications and Presentation Skills",
       issuer: "Starweaver",
       date: "Mar 2025",
-      skills: ["Oral Communication"]
+      skills: ["Oral Communication"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/Q50NZ0OE5Y7I"
     },
     {
       title: "AWS Cloud Technical Essentials",
       issuer: "Amazon Web Services",
       date: "Mar 2025",
-      skills: ["Cloud Computing"]
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/0ZMYKSRCG86G"
     },
     {
       title: "Cloud Computing Foundations",
       issuer: "IBM",
       date: "Mar 2025",
-      skills: ["Cloud Computing"]
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/Y3TG3AAHSD0H"
     },
     {
       title: "Developing Applications with Google Cloud: Foundations",
       issuer: "Google",
       date: "Mar 2025",
-      skills: ["Cloud Computing"]
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/FN47H0O9XUMV"
     },
     {
       title: "Introduction to Software, Programming and Databases",
       issuer: "IBM Skills Network Team",
       date: "Mar 2025",
-      skills: ["IT Basics"]
+      skills: ["IT Basics"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/9ENFC4TFBNYB"
     },
     {
       title: "Google Cloud Fundamentals: Core Infrastructure",
       issuer: "Google",
       date: "Mar 2025",
-      skills: ["Cloud Computing"]
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/3BWDE81CM01Y"
     },
     {
       title: "Introduction to Cloud Computing",
       issuer: "IBM",
       date: "Mar 2025",
-      skills: ["Cloud Computing"]
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/EJLSP1XTTLNK"
     },
     {
       title: "Introduction to Hardware and Operating Systems",
       issuer: "IBM",
       date: "Mar 2025",
-      skills: ["Hardware", "Operating Systems"]
+      skills: ["Hardware", "Operating Systems"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/9ENFC4TFBNYB"
     },
     {
       title: "Security Operations Analyst Associate Certified",
       issuer: "Microsoft",
       date: "April 2024",
-      skills: ["Cybersecurity"]
+      skills: ["Cybersecurity"],
+      linkedinUrl: "/documents/WaqarMajiet-8950_Microsoft_Learn.pdf"
     },
     {
       title: "Generative AI: Introduction and Applications",
       issuer: "IBM",
       date: "May 2025",
-      skills: ["AI"]
+      skills: ["AI"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/VZ1O2540Q8VQ"
     },
     {
       title: "Generative AI: Prompt Engineering Basics",
       issuer: "IBM",
       date: "May 2025",
-      skills: ["AI"]
+      skills: ["AI"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/F43QKUF25G6D"
     },
     {
       title: "Emotional Intelligence",
       issuer: "Arizona State University",
       date: "May 2025",
-      skills: ["Emotional Intelligence"]
+      skills: ["Emotional Intelligence"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/0OY25WNE9KLP"
     },
     {
       title: "Developing Interpersonal Skills",
       issuer: "IBM",
       date: "May 2025",
-      skills: ["Interpersonal Skills"]
+      skills: ["Interpersonal Skills"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/RL37V63UTHVT"
     },
     {
       title: "Work Smarter, Not Harder: Time Management for Personal & Professional Productivity",
       issuer: "UCI",
       date: "May 2025",
-      skills: ["Time Management"]
+      skills: ["Time Management"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/MO2XJ7REYWEV"
     },
     {
       title: "Write Professional Emails in English",
       issuer: "Georgia Institute of Technology",
       date: "Mar 2025",
-      skills: ["Communication"]
+      skills: ["Communication"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/77O0AE7D1765"
     }
   ];
 
@@ -154,7 +169,7 @@ const Education = () => {
                   institution="CTU Training Solutions"
                   degree="National Certificate NQF 5: Systems Development"
                   period="2023-2024"
-                  documentName="Waqar Majiet Confirmation Letter"
+                  documentPath="/documents/Waqar_Majiet_Confirmation_Letter.pdf"
                 />
                 
                 <EducationCard
@@ -186,7 +201,7 @@ const Education = () => {
                   institution="Spine Road High School"
                   degree="Matric"
                   period="2010-2015"
-                  documentName="majiet 2"
+                  documentPath="/documents/majiet_2.pdf"
                   subjects={[
                     { name: "English Home Language", percentage: "77%" },
                     { name: "Afrikaans First Additional Language", percentage: "70%" },
@@ -235,6 +250,7 @@ const Education = () => {
                 issuer={cert.issuer}
                 date={cert.date}
                 skills={cert.skills}
+                linkedinUrl={cert.linkedinUrl}
                 className="h-full"
               />
             ))}
