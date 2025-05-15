@@ -67,28 +67,28 @@ const Contact = () => {
       
       {/* Contact Form and Information */}
       <section className="section-container py-16">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 gap-8">
-            {/* Contact Information - Now first */}
+            {/* Contact Information - Now first as requested */}
             <div>
-              <h3 className="text-xl font-medium mb-4">Contact Information</h3>
-              <div className="space-y-4 flex flex-col items-center">
+              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+              <div className="space-y-4">
                 {contactInfo.map((info) => (
-                  <Card key={info.key} className="overflow-hidden w-1/2">
+                  <Card key={info.key} className="overflow-hidden">
                     <CardContent className="p-4">
-                      <div className="flex flex-col items-center text-center">
-                        <div className="bg-primary/10 p-3 rounded-full inline-flex mb-2">
+                      <div className="flex items-center">
+                        <div className="bg-primary/10 p-3 rounded-full inline-flex mr-4">
                           <info.icon className="h-5 w-5 text-primary" />
                         </div>
                         
-                        <div>
+                        <div className="flex-grow">
                           <h4 className="font-medium">{info.title}</h4>
                           
-                          <div className="flex flex-col items-center mt-1">
+                          <div className="flex items-center mt-1">
                             <Button 
                               variant="outline"
                               size="sm"
-                              className="text-xs mb-2"
+                              className="text-xs mr-4"
                               onClick={() => toggleInfo(info.key)}
                             >
                               {info.visible ? (
@@ -105,7 +105,7 @@ const Contact = () => {
                             </Button>
                             
                             {info.visible && (
-                              <div className="text-sm text-muted-foreground animate-fade-in text-center">
+                              <div className="text-sm text-muted-foreground animate-fade-in">
                                 {info.details.map((detail, i) => (
                                   <p key={i}>{detail}</p>
                                 ))}
@@ -120,13 +120,13 @@ const Contact = () => {
               </div>
             </div>
             
-            {/* Send Me a Message - Second */}
+            {/* Contact Form - Now second as requested */}
             <div>
               <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
               <ContactForm />
             </div>
-
-            {/* Map - Third/last */}
+            
+            {/* Map - Now third/last as requested */}
             <div>
               <h2 className="text-2xl font-bold mb-6">Located in Cape Town</h2>
               <Map 
