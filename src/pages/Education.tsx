@@ -109,6 +109,27 @@ const Education = () => {
       skills: ["Time Management"],
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/MO2XJ7REYWEV"
     },
+     {
+      title: "Leading with Impact: Team Dynamics, Strategy and Ethics",
+      issuer: "Coursera Instructor Network",
+      date: "May 2025",
+      skills: ["Leadership"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/O7Y5SZR1MUUE"
+    },
+     {
+      title: "Introduction to Personal Branding",
+      issuer: "University of Virginia",
+      date: "May 2025",
+      skills: ["Personal Branding"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/2LOLKIU0JMBP"
+    },
+     {
+      title: "Finding Your Professional Voice: Confidence & Impact",
+      issuer: "University of London",
+      date: "May 2025",
+      skills: ["Confidence"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/O7Y5SZR1MUUE"
+    },
     {
       title: "Write Professional Emails in English",
       issuer: "Georgia Institute of Technology",
