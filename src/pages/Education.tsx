@@ -131,11 +131,18 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/O7Y5SZR1MUUE"
     },
     {
-      title: " Introduction to Microsoft Azure Cloud Services",
+      title: "Introduction to Microsoft Azure Cloud Services",
       issuer: "Microsoft",
       date: "May 2025",
       skills: ["Cloud Computing"],
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/41L1GNTD95I3"
+    },
+    {
+      title: "Financial Planning for Young Adults",
+      issuer: "Illinois",
+      date: "May 2025",
+      skills: ["Financial Planning"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/CJCI1WNEKSVR"
     },
     {
       title: "Write Professional Emails in English",
