@@ -149,14 +149,14 @@ const Education = () => {
       issuer: "Microsoft Learn",
       date: "March 2024",
       skills: ["IT Security"],
-      documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVcZYp35QUNFv__x9CN48vUBHe2KIZLVyepCVxs8i3ec5g?e=SQT3xu"
+      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVcZYp35QUNFv__x9CN48vUBHe2KIZLVyepCVxs8i3ec5g?e=SQT3xu"
     },
      {
       title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900",
       issuer: "Microsoft Learn",
       date: "March 2024",
       skills: ["Cybersecurity"],
-      documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQfjOwjjiYJPsetIoAauRdUB-sKVvu_vWYePsAckguXBvw?e=NdAagu"
+      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQfjOwjjiYJPsetIoAauRdUB-sKVvu_vWYePsAckguXBvw?e=NdAagu"
     },
     {
       title: "Write Professional Emails in English",
