@@ -89,6 +89,13 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/F43QKUF25G6D"
     },
     {
+      title: " Preparation for Job Interviews",
+      issuer: "Coursera Project Network",
+      date: "May 2025",
+      skills: ["Interviews"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/ZS8KJGX458KU"
+    },
+    {
       title: "Emotional Intelligence",
       issuer: "Arizona State University",
       date: "May 2025",
