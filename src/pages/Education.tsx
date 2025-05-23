@@ -225,7 +225,7 @@ const Education = () => {
                   institution="LFP"
                   degree="Project Management National Certificate NQF 4"
                   period="2021-2022"
-                  linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZyx3aPQgw1KrxAihhv_rckBBLUX3m7_uGTassFpF4BoHw?e=s6Jmd4"
+                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZyx3aPQgw1KrxAihhv_rckBBLUX3m7_uGTassFpF4BoHw?e=jpMvrB"
                 />
                 
                 <EducationCard
