@@ -144,6 +144,20 @@ const Education = () => {
       skills: ["Financial Planning"],
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/CJCI1WNEKSVR"
     },
+     {
+      title: "Microsoft Security Operations Analyst SC-200",
+      issuer: "Microsoft Learn",
+      date: "March 2024",
+      skills: ["IT Security"],
+      documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVcZYp35QUNFv__x9CN48vUBHe2KIZLVyepCVxs8i3ec5g?e=SQT3xu"
+    },
+     {
+      title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900",
+      issuer: "Microsoft Learn",
+      date: "March 2024",
+      skills: ["Cybersecurity"],
+      documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQfjOwjjiYJPsetIoAauRdUB-sKVvu_vWYePsAckguXBvw?e=NdAagu"
+    },
     {
       title: "Write Professional Emails in English",
       issuer: "Georgia Institute of Technology",
@@ -211,6 +225,7 @@ const Education = () => {
                   institution="LFP"
                   degree="Project Management National Certificate NQF 4"
                   period="2021-2022"
+                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZyx3aPQgw1KrxAihhv_rckBBLUX3m7_uGTassFpF4BoHw?e=s6Jmd4"
                 />
                 
                 <EducationCard
