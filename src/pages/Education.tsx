@@ -151,6 +151,13 @@ const Education = () => {
       skills: ["Financial Planning"],
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/CJCI1WNEKSVR"
     },
+    {
+      title: "Psychology of The Self",
+      issuer: "American Psychological Association",
+      date: "May 2025",
+      skills: ["Psychology"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/I332G8Z1KL0I"
+    },
      {
       title: "Microsoft Security Operations Analyst SC-200",
       issuer: "Microsoft Learn",
