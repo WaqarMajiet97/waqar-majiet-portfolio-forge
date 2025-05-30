@@ -103,6 +103,13 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/0OY25WNE9KLP"
     },
     {
+      title: " Managing Conflicts with Cultural and Emotional Intelligence",
+      issuer: "University of Maryland",
+      date: "May 2025",
+      skills: ["Interpersonal Skills"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/YQGNYQSABP0X"
+    },
+    {
       title: "Developing Interpersonal Skills",
       issuer: "IBM",
       date: "May 2025",
