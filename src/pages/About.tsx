@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { GraduationCap, Code, Database, Award, Globe, Briefcase, ChevronDown, ChevronUp } from 'lucide-react';
+import { GraduationCap, Code, Database, Award, Globe, Briefcase, ChevronDown, ChevronUp, Star } from 'lucide-react';
 import WorkExperienceCard from '@/components/WorkExperienceCard';
 import { Button } from '@/components/ui/button';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
@@ -134,7 +134,10 @@ const About = () => {
                 className="border rounded-lg p-4"
               >
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-bold">Core Strengths</h3>
+                  <h3 className="text-xl font-bold flex items-center">
+                    <Star className="mr-2 h-5 w-5 text-primary" />
+                    Core Strengths
+                  </h3>
                   <CollapsibleTrigger asChild>
                     <Button variant="ghost" size="sm">
                       {isStrengthsOpen ? 
