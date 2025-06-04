@@ -47,7 +47,7 @@ const About = () => {
           
             <div className="prose max-w-none">
               <p className="text-gray-700 mb-4">
-                IT Professional focussing on Cloud Solutions Development on various platforms such as AWS, Google Cloud and Microsoft Azure. Experience in languages such as C#, JAVA, Python, HTML. Also, Web Development and Desktop Application Development.
+                Cloud Associate focussing on Cloud Solutions Development on various platforms such as AWS, Google Cloud and Microsoft Azure. Experience in languages such as C#, JAVA, Python, HTML. Also, Web Development and Desktop Application Development.
               </p>
             </div>
 
