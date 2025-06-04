@@ -39,8 +39,8 @@ const Contact = () => {
     {
       key: 'address' as const,
       icon: MapPin,
-      title: "Address",
-      details: ["3 Diana Close, Lost City, Tafelsig", "Mitchell's Plain, Cape Town, 7785"],
+      title: "Location",
+      details: ["Cape town, South Africa"],
       visible: visibleInfo.address
     },
   ];
