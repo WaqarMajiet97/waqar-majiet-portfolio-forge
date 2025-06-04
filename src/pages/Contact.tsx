@@ -40,7 +40,7 @@ const Contact = () => {
       key: 'address' as const,
       icon: MapPin,
       title: "Location",
-      details: ["Cape town, South Africa"],
+      details: ["Cape Town, South Africa"],
       visible: visibleInfo.address
     },
   ];
