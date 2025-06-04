@@ -165,6 +165,13 @@ const Education = () => {
       skills: ["Psychology"],
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/I332G8Z1KL0I"
     },
+    {
+      title: "Positive Psychology: Resilience Skills",
+      issuer: "University of Pennsylvania",
+      date: "May 2025",
+      skills: ["Psychology"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/J5LLSL7X0UZ5"
+    },
      {
       title: "Microsoft Security Operations Analyst SC-200",
       issuer: "Microsoft Learn",
