@@ -13,8 +13,8 @@ const About = () => {
   const [isStrengthsOpen, setIsStrengthsOpen] = useState(false);
 
   const skills = [
-    { category: "Technical", items: ["Cloud Computing", "Operating Systems", "Hardware"] },
-    { category: "Soft Skills", items: ["Communication", "Problem-Solving", "Analytical Thinking", "Detail-Oriented"] },
+    { category: "Technical", items: ["Cloud Computing", "Operating Systems", "Hardware", "Problem-Solving", "Analytical Thinking", "Detail-Oriented"] },
+    { category: "Soft Skills", items: ["Communication", "Emotional Intelligence", "Conflict Management", "Active Listening"] },
     { category: "Professional", items: ["Project Management", "Team Collaboration"] },
   ];
 
