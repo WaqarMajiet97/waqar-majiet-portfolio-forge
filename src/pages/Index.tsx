@@ -59,14 +59,6 @@ const Index = () => {
     },
   ];
 
-  // This function will ensure links scroll to the top of the page
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
-
   return (
     <Layout>
       <HeroSection />
@@ -147,7 +139,7 @@ const Index = () => {
                     </div>
                     <h3 className="text-xl font-medium mb-2 group-hover:text-primary transition-colors duration-300">{item.title}</h3>
                     <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                    <Button asChild variant="outline" onClick={scrollToTop} className="hover-scale glass-effect group-hover:border-primary">
+                    <Button asChild variant="outline" className="hover-scale glass-effect group-hover:border-primary">
                       <Link to={item.link}>
                         <span className="flex items-center gap-2">
                           View More
@@ -189,14 +181,14 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <div key={index} className={`perspective-card ${isVisible.certifications ? `animate-bounce-in` : 'opacity-0'}`} style={{animationDelay: `${index * 0.2}s`}}>
-                <div className="card-inner">
+              <div key={index} className={`perspective-card h-full ${isVisible.certifications ? `animate-bounce-in` : 'opacity-0'}`} style={{animationDelay: `${index * 0.2}s`}}>
+                <div className="card-inner h-full">
                   <CertificationCard
                     title={cert.title}
                     issuer={cert.issuer}
                     date={cert.date}
                     skills={cert.skills}
-                    className="glass-effect hover-glow"
+                    className="glass-effect hover-glow h-full"
                   />
                 </div>
               </div>
@@ -204,7 +196,7 @@ const Index = () => {
           </div>
           
           <div className={`text-center mt-10 ${isVisible.certifications ? 'animate-fade-in-delay-3' : 'opacity-0'}`}>
-            <Button asChild onClick={scrollToTop} className="hover-glow interactive-gradient text-white border-none">
+            <Button asChild className="hover-glow interactive-gradient text-white border-none">
               <Link to="/education">
                 <span className="flex items-center gap-2">
                   View All Certifications
@@ -247,7 +239,6 @@ const Index = () => {
             <Button 
               asChild 
               size="lg" 
-              onClick={scrollToTop} 
               variant="secondary"
               className="hover-glow group glass-effect border-white/20"
             >
