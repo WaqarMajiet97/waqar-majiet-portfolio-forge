@@ -139,14 +139,14 @@ const Index = () => {
                     </div>
                     <h3 className="text-xl font-medium mb-2 group-hover:text-primary transition-colors duration-300">{item.title}</h3>
                     <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                    <Button asChild variant="outline" className="hover-scale glass-effect group-hover:border-primary">
-                      <Link to={item.link}>
+                    <Link to={item.link}>
+                      <Button variant="outline" className="hover-scale glass-effect group-hover:border-primary">
                         <span className="flex items-center gap-2">
                           View More
                           <Zap className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         </span>
-                      </Link>
-                    </Button>
+                      </Button>
+                    </Link>
                   </CardContent>
                 </div>
               </Card>
@@ -196,14 +196,14 @@ const Index = () => {
           </div>
           
           <div className={`text-center mt-10 ${isVisible.certifications ? 'animate-fade-in-delay-3' : 'opacity-0'}`}>
-            <Button asChild className="hover-glow interactive-gradient text-white border-none">
-              <Link to="/education">
+            <Link to="/education">
+              <Button className="hover-glow interactive-gradient text-white border-none">
                 <span className="flex items-center gap-2">
                   View All Certifications
                   <Sparkles className="h-4 w-4" />
                 </span>
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -236,21 +236,21 @@ const Index = () => {
             <p className="text-white/90 max-w-2xl mx-auto mb-6">
               Looking for an IT professional? Feel free to reach out to discuss potential opportunities.
             </p>
-            <Button 
-              asChild 
-              size="lg" 
-              variant="secondary"
-              className="hover-glow group glass-effect border-white/20"
-            >
-              <Link to="/contact">
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                variant="secondary"
+                className="hover-glow group glass-effect border-white/20"
+              >
                 <span className="flex items-center gap-2">
                   Get In Touch
                   <Rocket className="h-4 w-4 transition-transform group-hover:rotate-12" />
                 </span>
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
+      </div>
       </section>
     </Layout>
   );
