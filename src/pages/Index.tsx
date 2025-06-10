@@ -3,7 +3,7 @@ import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Briefcase, GraduationCap, Code, User, Mail } from 'lucide-react';
+import { Briefcase, GraduationCap, User, Mail, Sparkles, Zap, Rocket } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CertificationCard from '@/components/CertificationCard';
 import { useEffect, useState } from 'react';
@@ -71,87 +71,176 @@ const Index = () => {
     <Layout>
       <HeroSection />
       
-      {/* Quick Navigation Section */}
-      <section className="section-container">
-        <h2 className={`text-3xl font-bold text-center mb-12 ${isVisible.navigation ? 'animate-fade-in' : ''}`}>Explore My Portfolio</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { icon: User, title: "About Me", description: "Learn more about my skills, experience and background", link: "/about", image: "/lovable-uploads/e91d8362-16c1-4ff4-86c4-f54edb440f07.png" },
-            { icon: Briefcase, title: "Projects & Achievements", description: "Explore my Projects and Achievements", link: "/projects", image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-            { icon: GraduationCap, title: "Education", description: "My academic journey and qualifications", link: "/education", image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-            { icon: Mail, title: "Contact", description: "Get in touch with me", link: "/contact", image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
-          ].map((item, index) => (
-            <Card key={index} className={`hover-lift h-full overflow-hidden transition-all duration-300 ${isVisible.navigation ? `animate-fade-in-delay-${index+1}` : 'opacity-0'}`}>
-              <div className="h-32 overflow-hidden">
-                <img 
-                  src={item.image} 
-                  alt={item.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" 
-                />
-              </div>
-              <CardContent className="pt-6 text-center">
-                <div className="mb-4 bg-primary/10 p-3 rounded-full inline-flex transition-all duration-300 hover:bg-primary/20">
-                  <item.icon className="h-6 w-6 text-primary" />
+      {/* Quick Navigation Section with enhanced animations */}
+      <section className="section-container relative overflow-hidden">
+        {/* Background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, hsl(var(--primary)) 1px, transparent 0)`,
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        
+        <div className="relative z-10">
+          <div className="text-center mb-16">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Sparkles className="h-6 w-6 text-primary animate-wiggle" />
+              <h2 className={`text-3xl font-bold text-gradient ${isVisible.navigation ? 'animate-bounce-in' : ''}`}>
+                Explore My Portfolio
+              </h2>
+              <Sparkles className="h-6 w-6 text-primary animate-wiggle" style={{animationDelay: '0.5s'}} />
+            </div>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Discover my journey through technology, innovation, and professional growth
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { 
+                icon: User, 
+                title: "About Me", 
+                description: "Learn more about my skills, experience and background", 
+                link: "/about", 
+                image: "/lovable-uploads/e91d8362-16c1-4ff4-86c4-f54edb440f07.png",
+                color: "from-blue-500/20 to-purple-500/20"
+              },
+              { 
+                icon: Briefcase, 
+                title: "Projects & Achievements", 
+                description: "Explore my Projects and Achievements", 
+                link: "/projects", 
+                image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                color: "from-green-500/20 to-teal-500/20"
+              },
+              { 
+                icon: GraduationCap, 
+                title: "Education", 
+                description: "My academic journey and qualifications", 
+                link: "/education", 
+                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                color: "from-orange-500/20 to-red-500/20"
+              },
+              { 
+                icon: Mail, 
+                title: "Contact", 
+                description: "Get in touch with me", 
+                link: "/contact", 
+                image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                color: "from-pink-500/20 to-rose-500/20"
+              }
+            ].map((item, index) => (
+              <Card key={index} className={`group hover-lift h-full overflow-hidden transition-all duration-500 perspective-card relative ${isVisible.navigation ? `animate-bounce-in` : 'opacity-0'}`} style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="card-inner">
+                  <div className="h-32 overflow-hidden relative">
+                    <img 
+                      src={item.image} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-125" 
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
+                  </div>
+                  <CardContent className="pt-6 text-center relative">
+                    <div className="mb-4 bg-primary/10 p-3 rounded-full inline-flex transition-all duration-300 group-hover:bg-primary/20 group-hover:scale-110 group-hover:animate-glow">
+                      <item.icon className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-white" />
+                    </div>
+                    <h3 className="text-xl font-medium mb-2 group-hover:text-primary transition-colors duration-300">{item.title}</h3>
+                    <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
+                    <Button asChild variant="outline" onClick={scrollToTop} className="hover-scale glass-effect group-hover:border-primary">
+                      <Link to={item.link}>
+                        <span className="flex items-center gap-2">
+                          View More
+                          <Zap className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </span>
+                      </Link>
+                    </Button>
+                  </CardContent>
                 </div>
-                <h3 className="text-xl font-medium mb-2">{item.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
-                <Button asChild variant="outline" onClick={scrollToTop} className="hover-scale">
-                  <Link to={item.link}>View More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
       
-      {/* Featured Certifications */}
-      <section className="bg-muted py-16 relative" style={{
+      {/* Featured Certifications with parallax effect */}
+      <section className="relative py-16 parallax-bg" style={{
         backgroundImage: "url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed"
       }}>
-        <div className="absolute inset-0 bg-black/50 transition-opacity duration-700"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/50 to-black/70"></div>
+        
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-white/5 rounded-full animate-float blur-xl"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/10 rounded-full animate-float" style={{animationDelay: '3s'}}></div>
+        </div>
+        
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 relative z-10 ${isVisible.certifications ? 'animate-fade-in' : 'opacity-0'}`}>
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white">Featured Certifications and Courses</h2>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Rocket className="h-6 w-6 text-white animate-wiggle" />
+              <h2 className="text-3xl font-bold text-white">Featured Certifications and Courses</h2>
+              <Rocket className="h-6 w-6 text-white animate-wiggle" style={{animationDelay: '0.7s'}} />
+            </div>
             <p className="text-gray-200 mt-2">Some of my recent professional certifications and courses</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <div key={index} className={isVisible.certifications ? `animate-fade-in-delay-${index+1}` : 'opacity-0'}>
-                <CertificationCard
-                  title={cert.title}
-                  issuer={cert.issuer}
-                  date={cert.date}
-                  skills={cert.skills}
-                />
+              <div key={index} className={`perspective-card ${isVisible.certifications ? `animate-bounce-in` : 'opacity-0'}`} style={{animationDelay: `${index * 0.2}s`}}>
+                <div className="card-inner">
+                  <CertificationCard
+                    title={cert.title}
+                    issuer={cert.issuer}
+                    date={cert.date}
+                    skills={cert.skills}
+                    className="glass-effect hover-glow"
+                  />
+                </div>
               </div>
             ))}
           </div>
           
           <div className={`text-center mt-10 ${isVisible.certifications ? 'animate-fade-in-delay-3' : 'opacity-0'}`}>
-            <Button asChild onClick={scrollToTop} className="hover-scale">
-              <Link to="/education">View All Certifications</Link>
+            <Button asChild onClick={scrollToTop} className="hover-glow interactive-gradient text-white border-none">
+              <Link to="/education">
+                <span className="flex items-center gap-2">
+                  View All Certifications
+                  <Sparkles className="h-4 w-4" />
+                </span>
+              </Link>
             </Button>
           </div>
         </div>
       </section>
       
-      {/* Call to Action */}
+      {/* Call to Action with enhanced styling */}
       <section className="section-container">
         <div 
-          className={`bg-primary/10 rounded-xl p-8 md:p-12 text-center relative overflow-hidden ${isVisible.cta ? 'animate-fade-in' : 'opacity-0'}`}
+          className={`relative rounded-xl p-8 md:p-12 text-center overflow-hidden ${isVisible.cta ? 'animate-bounce-in' : 'opacity-0'}`}
           style={{
             backgroundImage: "url(https://images.unsplash.com/photo-1587560699334-bea93391dcef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-primary/70 rounded-xl transition-all duration-700 hover:bg-primary/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-secondary/80 rounded-xl"></div>
+          
+          {/* Floating elements */}
+          <div className="absolute inset-0 overflow-hidden rounded-xl">
+            <div className="absolute top-8 left-8 w-4 h-4 bg-white/30 rounded-full animate-float"></div>
+            <div className="absolute bottom-8 right-8 w-6 h-6 bg-white/20 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
+            <div className="absolute top-1/2 right-1/4 w-3 h-3 bg-white/40 rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+          </div>
+          
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold mb-4 text-white">Interested in Working Together?</h2>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Zap className="h-6 w-6 text-white animate-wiggle" />
+              <h2 className="text-3xl font-bold text-white">Interested in Working Together?</h2>
+              <Zap className="h-6 w-6 text-white animate-wiggle" style={{animationDelay: '0.3s'}} />
+            </div>
             <p className="text-white/90 max-w-2xl mx-auto mb-6">
               Looking for an IT professional? Feel free to reach out to discuss potential opportunities.
             </p>
@@ -160,9 +249,14 @@ const Index = () => {
               size="lg" 
               onClick={scrollToTop} 
               variant="secondary"
-              className="hover-scale transition-transform duration-300 shadow-lg"
+              className="hover-glow group glass-effect border-white/20"
             >
-              <Link to="/contact">Get In Touch</Link>
+              <Link to="/contact">
+                <span className="flex items-center gap-2">
+                  Get In Touch
+                  <Rocket className="h-4 w-4 transition-transform group-hover:rotate-12" />
+                </span>
+              </Link>
             </Button>
           </div>
         </div>
