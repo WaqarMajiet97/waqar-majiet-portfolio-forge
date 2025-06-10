@@ -89,6 +89,13 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/F43QKUF25G6D"
     },
     {
+      title: "Grit and Growth Mindset",
+      issuer: "Arizona State University",
+      date: "June 2025",
+      skills: ["Mindset"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/Z5GS89PN01CP"
+    },
+    {
       title: " Preparation for Job Interviews",
       issuer: "Coursera Project Network",
       date: "May 2025",
