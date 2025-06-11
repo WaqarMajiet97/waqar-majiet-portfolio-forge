@@ -69,26 +69,26 @@ const Contact = () => {
       <section className="section-container py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 gap-8">
-            {/* Contact Information - Now first as requested */}
+            {/* Contact Information - Now horizontal layout */}
             <div>
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {contactInfo.map((info) => (
                   <Card key={info.key} className="overflow-hidden">
                     <CardContent className="p-4">
-                      <div className="flex items-center">
-                        <div className="bg-primary/10 p-3 rounded-full inline-flex mr-4">
+                      <div className="flex flex-col items-center text-center">
+                        <div className="bg-primary/10 p-3 rounded-full inline-flex mb-3">
                           <info.icon className="h-5 w-5 text-primary" />
                         </div>
                         
-                        <div className="flex-grow">
-                          <h4 className="font-medium">{info.title}</h4>
+                        <div className="w-full">
+                          <h4 className="font-medium mb-3">{info.title}</h4>
                           
-                          <div className="flex items-center mt-1">
+                          <div className="flex flex-col items-center">
                             <Button 
                               variant="outline"
                               size="sm"
-                              className="text-xs mr-4"
+                              className="text-xs mb-3"
                               onClick={() => toggleInfo(info.key)}
                             >
                               {info.visible ? (
