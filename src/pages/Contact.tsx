@@ -33,7 +33,7 @@ const Contact = () => {
       key: 'email' as const,
       icon: Mail,
       title: "Email",
-      details: ["majietwaqar97@gmail.com"],
+      details: ["majietwaqar97@gmail.com", "waqar.majiet@capaciti.org.za"],
       visible: visibleInfo.email
     },
     {
