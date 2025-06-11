@@ -45,8 +45,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="group text-primary font-heading font-bold text-xl hover:opacity-80 transition-all duration-300">
               <span className="relative inline-block">
-                <span className="hover-scale flex items-center gap-2">
-                  <Sparkles className="h-4 w-4 animate-wiggle" />
+                <span className="hover-scale">
                   Waqar Majiet
                 </span>
                 <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></div>

@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Sparkles, Code, Zap } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useState, useEffect } from 'react';
@@ -85,12 +85,10 @@ const HeroSection = () => {
             </div>
             
             <div className={`relative ${isVisible ? 'animate-fade-in-delay-1' : 'opacity-0'}`}>
-              <p className="text-lg text-foreground mb-2 flex items-center gap-2">
-                <Code className="h-5 w-5 text-primary" />
+              <p className="text-lg text-foreground mb-2">
                 Cloud Associate at Capaciti
               </p>
-              <p className="text-base text-muted-foreground mb-8 max-w-2xl flex items-center gap-2">
-                <Zap className="h-4 w-4 text-secondary" />
+              <p className="text-base text-muted-foreground mb-8 max-w-2xl">
                 Passionate about cloud technology, innovation, and creating impactful solutions
               </p>
             </div>
