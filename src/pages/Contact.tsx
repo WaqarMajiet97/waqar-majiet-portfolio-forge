@@ -74,7 +74,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {contactInfo.map((info) => (
-                  <Card key={info.key} className="overflow-hidden">
+                  <Card key={info.key} className="overflow-hidden card-hover">
                     <CardContent className="p-4">
                       <div className="flex flex-col items-center text-center">
                         <div className="bg-primary/10 p-3 rounded-full inline-flex mb-3">

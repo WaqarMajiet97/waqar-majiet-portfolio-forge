@@ -11,7 +11,7 @@ interface WorkExperienceCardProps {
 
 const WorkExperienceCard = ({ company, position, period, description }: WorkExperienceCardProps) => {
   return (
-    <Card className="overflow-hidden hover:shadow-md transition-shadow">
+    <Card className="overflow-hidden hover:shadow-md transition-shadow card-hover">
       <CardContent className="p-5">
         <div className="flex items-start gap-4">
           <div className="bg-primary/5 p-2 rounded-full">
