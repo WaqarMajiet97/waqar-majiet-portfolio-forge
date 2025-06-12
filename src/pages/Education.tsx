@@ -194,6 +194,27 @@ const Education = () => {
       linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQfjOwjjiYJPsetIoAauRdUB-sKVvu_vWYePsAckguXBvw?e=NdAagu"
     },
     {
+      title: "DIGITAL LEARNING CERTIFICATE: Digital Modules",
+      issuer: "YES",
+      date: "June 2025",
+      skills: ["Digital Training"],
+      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EesRQcxSuh1AjnQnVwhFMiYBo_XmzHtNXcwzTvdWd6QhMQ?e=65SuG1"
+    },
+    {
+      title: "DIGITAL LEARNING CERTIFICATE: Enterpreneurship Modules",
+      issuer: "YES",
+      date: "June 2025",
+      skills: ["Enterpreneurship"],
+      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZTAJn5ph4BJmsQsKRZQkwQBLNu2hC33Sem3ADsqYATkDA?e=eGlbnK"
+    },
+    {
+      title: "DIGITAL LEARNING CERTIFICATE: Work Readiness Modules",
+      issuer: "YES",
+      date: "June 2025",
+      skills: ["Work Readiness"],
+      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EUBY93aLEyVBmkPZNtDkzTsBK0ueK02sxcMmyMe_Utu-Ig?e=hQHpR4"
+    },
+    {
       title: "Write Professional Emails in English",
       issuer: "Georgia Institute of Technology",
       date: "Mar 2025",
