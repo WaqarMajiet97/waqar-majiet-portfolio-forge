@@ -61,6 +61,11 @@ const additionalProjects: AdditionalProject[] = [
     category: "Solutions Development"
   },
   {
+    title: "Solutions Development 2",
+    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/Ef1ahR6NnOpIonqUEN9HCGkB3rpB2ViWXg38odUXgwBMFA?e=FFvx7t",
+    category: "Solutions Development"
+  },
+  {
     title: "Task Management Application",
     url: "https://capeitinitiative-my.sharepoint.com/:i:/g/personal/waqar_majiet_capaciti_org_za/EQwjmndWzdNEmhs61QoMwmkB-U3EBygjcYepLBOqzz_RkQ?e=3marQn",
     category: "Application Development"
