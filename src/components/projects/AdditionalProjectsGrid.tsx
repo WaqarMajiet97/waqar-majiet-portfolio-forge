@@ -66,8 +66,8 @@ const additionalProjects: AdditionalProject[] = [
     category: "Solutions Development"
   },
   {
-    title: "Task Management Application",
-    url: "https://capeitinitiative-my.sharepoint.com/:i:/g/personal/waqar_majiet_capaciti_org_za/EQwjmndWzdNEmhs61QoMwmkB-U3EBygjcYepLBOqzz_RkQ?e=3marQn",
+    title: "Task Management Application (Google AppSheets)",
+    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EUeLWlrxzQBArJNcgxdm7ewB5CfinvUK4O9accGoVXVVTA?e=8wnfoc",
     category: "Application Development"
   }
 ];
