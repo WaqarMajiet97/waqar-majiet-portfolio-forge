@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -23,7 +22,7 @@ const additionalProjects: AdditionalProject[] = [
   },
   {
     title: "Business Programming 3",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVOdBEHqxflMukhuWpIdOb8BaxtH3Ed9sgSsxxWWXHvBdw?e=vvEH3J",
+    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVOdBEHqxflMukhuWpIdOb8BaXQ6V_IxMu8y58Vw-65Qhg?e=vvEH3J",
     category: "Business Programming"
   },
   {
@@ -97,10 +96,11 @@ const AdditionalProjectsGrid = () => {
               
               <Button 
                 onClick={() => handleProjectClick(project.url)}
-                className="w-full hover-scale"
-                size="sm"
+                variant="default" 
+                size="lg"
+                className="w-full hover-scale group text-lg py-6 justify-center"
               >
-                <ExternalLink className="mr-2 h-4 w-4" />
+                <ExternalLink className="mr-2 h-6 w-6 transition-transform group-hover:rotate-90" />
                 View Details
               </Button>
             </CardContent>
