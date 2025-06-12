@@ -26,7 +26,7 @@ const additionalProjects: AdditionalProject[] = [
     category: "Business Programming"
   },
   {
-    title: "Business Programming 4",
+    title: "Programming with C# 4",
     url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/ETVxrRjYPxJLqg86EOVvUtkB6MhUUF8KxrVvyMjgVP4y6g?e=eFpNrf",
     category: "C# Programming"
   },
