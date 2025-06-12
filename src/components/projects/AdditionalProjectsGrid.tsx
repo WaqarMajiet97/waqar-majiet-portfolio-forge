@@ -11,14 +11,14 @@ interface AdditionalProject {
 
 const additionalProjects: AdditionalProject[] = [
   {
-    title: "Business Programming 1",
+    title: "Programming with C# 1",
     url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EcSOctMEDPREuoLImFnHYnEBWPb0YdqNbs46UFPHj2ppIQ?e=y6JONe",
-    category: "Business Programming"
+    category: "C# Programming"
   },
   {
-    title: "Business Programming 2", 
+    title: "Programming with C# 2", 
     url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EWgFC6mBJV5BlGuE1AKoIe4BMJpKslVZsbvL82jYwA5_4g?e=573TlB",
-    category: "Business Programming"
+    category: "C# Programming"
   },
   {
     title: "Business Programming 3",
