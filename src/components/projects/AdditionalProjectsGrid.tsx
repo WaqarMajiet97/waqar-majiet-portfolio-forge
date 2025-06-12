@@ -21,14 +21,14 @@ const additionalProjects: AdditionalProject[] = [
     category: "C# Programming"
   },
   {
-    title: "Business Programming 3",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVOdBEHqxflMukhuWpIdOb8BaXQ6V_IxMu8y58Vw-65Qhg?e=vvEH3J",
+    title: "Programming with C# 3",
+    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVOdBEHqxflMukhuWpIdOb8BaxtH3Ed9sgSsxxWWXHvBdw?e=0L0d0Z",
     category: "Business Programming"
   },
   {
     title: "Business Programming 4",
     url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/ETVxrRjYPxJLqg86EOVvUtkB6MhUUF8KxrVvyMjgVP4y6g?e=eFpNrf",
-    category: "Business Programming"
+    category: "C# Programming"
   },
   {
     title: "DevOps 1",
