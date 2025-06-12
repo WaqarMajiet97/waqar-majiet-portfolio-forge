@@ -4,7 +4,7 @@ import Layout from '@/components/Layout';
 import ProjectHeader from '@/components/projects/ProjectHeader';
 import ProjectsContainer from '@/components/projects/ProjectsContainer';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ChevronDown, ChevronUp, Plus } from 'lucide-react';
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false);
@@ -39,7 +39,22 @@ const Projects = () => {
           </Button>
         </div>
         
-        {showProjects && <ProjectsContainer />}
+        {showProjects && (
+          <>
+            <ProjectsContainer />
+            
+            <div className="flex justify-center mt-12">
+              <Button 
+                variant="default" 
+                size="lg"
+                className="hover-scale group min-w-[250px] text-lg py-6"
+              >
+                <Plus className="mr-2 h-6 w-6 transition-transform group-hover:rotate-90" />
+                More Projects
+              </Button>
+            </div>
+          </>
+        )}
       </div>
     </Layout>
   );
