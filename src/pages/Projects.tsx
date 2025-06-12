@@ -9,6 +9,10 @@ import { ChevronDown, ChevronUp, Plus } from 'lucide-react';
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false);
   
+  const handleMoreProjectsClick = () => {
+    window.open('https://capeitinitiative-my.sharepoint.com/:f:/g/personal/waqar_majiet_capaciti_org_za/EviL1Dp0Rp1PtO-RKJuLu1UBZlZwvURU1ulhCQ1aeelwAA?e=rmuP1R', '_blank');
+  };
+  
   return (
     <Layout>
       <ProjectHeader 
@@ -48,6 +52,7 @@ const Projects = () => {
                 variant="default" 
                 size="lg"
                 className="hover-scale group min-w-[250px] text-lg py-6"
+                onClick={handleMoreProjectsClick}
               >
                 <Plus className="mr-2 h-6 w-6 transition-transform group-hover:rotate-90" />
                 More Projects
