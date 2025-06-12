@@ -3,14 +3,16 @@ import { useState } from 'react';
 import Layout from '@/components/Layout';
 import ProjectHeader from '@/components/projects/ProjectHeader';
 import ProjectsContainer from '@/components/projects/ProjectsContainer';
+import AdditionalProjectsGrid from '@/components/projects/AdditionalProjectsGrid';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ChevronUp, Plus } from 'lucide-react';
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false);
+  const [showAdditionalProjects, setShowAdditionalProjects] = useState(false);
   
   const handleMoreProjectsClick = () => {
-    window.open('https://capeitinitiative-my.sharepoint.com/:f:/g/personal/waqar_majiet_capaciti_org_za/EviL1Dp0Rp1PtO-RKJuLu1UBZlZwvURU1ulhCQ1aeelwAA?e=rmuP1R', '_blank');
+    setShowAdditionalProjects(!showAdditionalProjects);
   };
   
   return (
@@ -43,23 +45,21 @@ const Projects = () => {
           </Button>
         </div>
         
-        {showProjects && (
-          <>
-            <ProjectsContainer />
-            
-            <div className="flex justify-center mt-12">
-              <Button 
-                variant="default" 
-                size="lg"
-                className="hover-scale group min-w-[250px] text-lg py-6"
-                onClick={handleMoreProjectsClick}
-              >
-                <Plus className="mr-2 h-6 w-6 transition-transform group-hover:rotate-90" />
-                More Projects
-              </Button>
-            </div>
-          </>
-        )}
+        {showProjects && <ProjectsContainer />}
+        
+        <div className="flex justify-center mt-12">
+          <Button 
+            variant="default" 
+            size="lg"
+            className="hover-scale group min-w-[250px] text-lg py-6"
+            onClick={handleMoreProjectsClick}
+          >
+            <Plus className="mr-2 h-6 w-6 transition-transform group-hover:rotate-90" />
+            {showAdditionalProjects ? 'Hide Additional Projects' : 'More Projects'}
+          </Button>
+        </div>
+        
+        {showAdditionalProjects && <AdditionalProjectsGrid />}
       </div>
     </Layout>
   );
