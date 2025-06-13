@@ -251,8 +251,8 @@ const Education = () => {
               <h2 className="text-2xl font-bold">Academic & Professional Education</h2>
               <Button 
                 onClick={() => setShowEducation(!showEducation)}
-                variant="outline"
-                className="hover-scale group"
+                variant="default"
+                size="default"
               >
                 {showEducation ? (
                   <>
@@ -330,8 +330,8 @@ const Education = () => {
           <h2 className="text-2xl font-bold">Professional Certifications and Online Courses</h2>
           <Button 
             onClick={() => setShowCertifications(!showCertifications)}
-            variant="outline"
-            className="hover-scale group"
+            variant="default"
+            size="default"
           >
             {showCertifications ? (
               <>

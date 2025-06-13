@@ -64,7 +64,7 @@ const About = () => {
                     Professional Experience
                   </h3>
                   <CollapsibleTrigger asChild>
-                    <Button variant="ghost" size="sm">
+                    <Button variant="default" size="sm">
                       {isExperienceOpen ? 
                         <ChevronUp className="h-4 w-4" /> : 
                         <ChevronDown className="h-4 w-4" />
@@ -139,7 +139,7 @@ const About = () => {
                     Core Strengths
                   </h3>
                   <CollapsibleTrigger asChild>
-                    <Button variant="ghost" size="sm">
+                    <Button variant="default" size="sm">
                       {isStrengthsOpen ? 
                         <ChevronUp className="h-4 w-4" /> : 
                         <ChevronDown className="h-4 w-4" />
