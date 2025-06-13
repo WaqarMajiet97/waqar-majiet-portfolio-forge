@@ -5,7 +5,7 @@ import ProjectHeader from '@/components/projects/ProjectHeader';
 import ProjectsContainer from '@/components/projects/ProjectsContainer';
 import AdditionalProjectsGrid from '@/components/projects/AdditionalProjectsGrid';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, ChevronUp, Plus } from 'lucide-react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const Projects = () => {
   const [showProjects, setShowProjects] = useState(false);
@@ -52,8 +52,17 @@ const Projects = () => {
             className="hover-scale group min-w-[250px] text-lg py-6"
             onClick={handleMoreProjectsClick}
           >
-            <Plus className="mr-2 h-6 w-6 transition-transform group-hover:rotate-90" />
-            {showAdditionalProjects ? 'Hide Additional Projects' : 'More Projects'}
+            {showAdditionalProjects ? (
+              <>
+                <ChevronUp className="mr-2 h-6 w-6 transition-transform" />
+                Hide Additional Projects
+              </>
+            ) : (
+              <>
+                <ChevronDown className="mr-2 h-6 w-6 transition-transform" />
+                More Projects
+              </>
+            )}
           </Button>
         </div>
         
