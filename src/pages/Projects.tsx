@@ -27,18 +27,17 @@ const Projects = () => {
         <div className="flex justify-center mb-8">
           <Button 
             onClick={() => setShowProjects(!showProjects)}
-            variant="outline" 
             size="lg"
-            className="hover-scale group min-w-[200px]"
+            className="hover-scale group min-w-[250px] text-lg py-6"
           >
             {showProjects ? (
               <>
-                <ChevronUp className="mr-2 h-5 w-5 transition-transform" />
+                <ChevronUp className="mr-2 h-6 w-6 transition-transform" />
                 Hide Projects
               </>
             ) : (
               <>
-                <ChevronDown className="mr-2 h-5 w-5 transition-transform" />
+                <ChevronDown className="mr-2 h-6 w-6 transition-transform" />
                 View Projects
               </>
             )}
@@ -49,7 +48,6 @@ const Projects = () => {
         
         <div className="flex justify-center mt-12">
           <Button 
-            variant="default" 
             size="lg"
             className="hover-scale group min-w-[250px] text-lg py-6"
             onClick={handleMoreProjectsClick}

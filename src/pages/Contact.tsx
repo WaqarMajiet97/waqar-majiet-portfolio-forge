@@ -86,19 +86,18 @@ const Contact = () => {
                           
                           <div className="flex flex-col items-center">
                             <Button 
-                              variant="outline"
-                              size="sm"
-                              className="text-xs mb-3"
+                              size="lg"
+                              className="hover-glow mb-3 w-full justify-center"
                               onClick={() => toggleInfo(info.key)}
                             >
                               {info.visible ? (
                                 <>
-                                  <EyeOff className="mr-1 h-3 w-3" />
+                                  <EyeOff className="mr-2 h-4 w-4" />
                                   Hide
                                 </>
                               ) : (
                                 <>
-                                  <Eye className="mr-1 h-3 w-3" />
+                                  <Eye className="mr-2 h-4 w-4" />
                                   Show
                                 </>
                               )}
