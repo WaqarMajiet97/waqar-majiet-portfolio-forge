@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
@@ -140,11 +139,8 @@ const Index = () => {
                     <h3 className="text-xl font-medium mb-2 group-hover:text-primary transition-colors duration-300">{item.title}</h3>
                     <p className="text-gray-600 mb-4 text-sm">{item.description}</p>
                     <Link to={item.link}>
-                      <Button className="hover-glow group-hover:border-primary w-full justify-center">
-                        <span className="flex items-center gap-2">
-                          View More
-                          <Zap className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </span>
+                      <Button className="w-full text-center">
+                        View More
                       </Button>
                     </Link>
                   </CardContent>
