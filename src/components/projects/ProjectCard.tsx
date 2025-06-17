@@ -74,7 +74,7 @@ const ProjectCard = ({
         <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
           <CollapsibleTrigger asChild>
             <Button 
-              variant="outline" 
+              variant="default" 
               size="sm" 
               className="mb-3 w-full justify-center"
             >
