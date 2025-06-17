@@ -96,6 +96,13 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/Z5GS89PN01CP"
     },
     {
+      title: "Solving Problems with Creative and Critical Thinking",
+      issuer: "IBM",
+      date: "June 2025",
+      skills: ["Problem-Solving"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/verify/XT7TWWU66IPS"
+    },
+    {
       title: " Preparation for Job Interviews",
       issuer: "Coursera Project Network",
       date: "May 2025",
