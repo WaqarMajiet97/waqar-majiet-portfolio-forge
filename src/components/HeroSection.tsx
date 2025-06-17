@@ -89,7 +89,7 @@ const HeroSection = () => {
                 Cloud Associate at Capaciti
               </p>
               <p className="text-base text-muted-foreground mb-8 max-w-2xl">
-                Passionate about cloud technology, innovation, and creating impactful solutions
+                Passionate about cloud technology, innovation, development and creating impactful solutions
               </p>
             </div>
             
