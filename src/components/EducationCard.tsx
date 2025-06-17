@@ -62,7 +62,7 @@ const EducationCard = ({
         
         {(documentName || documentPath) && (
           <Button 
-            variant="outline" 
+            variant="default" 
             size="sm" 
             className="mt-4 w-full"
             onClick={openDocument}

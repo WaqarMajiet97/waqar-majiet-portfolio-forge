@@ -35,7 +35,7 @@ const CertificationCard = ({ title, issuer, date, skills, className, linkedinUrl
         
         {linkedinUrl && (
           <Button 
-            variant="outline" 
+            variant="default" 
             size="sm" 
             className="w-full mt-auto"
             onClick={() => window.open(linkedinUrl, '_blank', 'noopener,noreferrer')}
