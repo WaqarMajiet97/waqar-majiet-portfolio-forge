@@ -82,11 +82,18 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/VZ1O2540Q8VQ"
     },
     {
-      title: "Generative AI: Prompt Engineering Basics",
+      title: "Generative AI: Introduction and Applications",
       issuer: "IBM",
       date: "May 2025",
       skills: ["AI"],
-      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/F43QKUF25G6D"
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/VZ1O2540Q8VQ"
+    },
+    {
+      title: "Cloud Architecture Design Patterns",
+      issuer: "Coursera Instructor Network",
+      date: "June 2025",
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/ANYKBKGFFQE9"
     },
     {
       title: "Grit and Growth Mindset",
