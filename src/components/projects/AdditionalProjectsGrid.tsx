@@ -12,62 +12,62 @@ interface AdditionalProject {
 const additionalProjects: AdditionalProject[] = [
   {
     title: "Programming with C# 1",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EcSOctMEDPREuoLImFnHYnEBWPb0YdqNbs46UFPHj2ppIQ?e=y6JONe",
+    url: "https://drive.google.com/file/d/1BQspVPDxUkkNg_QZEOam6l9XQ97wXmKF/view?usp=drive_link",
     category: "C# Programming"
   },
   {
     title: "Programming with C# 2", 
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EWgFC6mBJV5BlGuE1AKoIe4BMJpKslVZsbvL82jYwA5_4g?e=573TlB",
+    url: "https://drive.google.com/file/d/1KjfXWWgFSja5OogopNXvUfqqWVLANhUy/view?usp=drive_link",
     category: "C# Programming"
   },
   {
     title: "Programming with C# 3",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVOdBEHqxflMukhuWpIdOb8BaxtH3Ed9sgSsxxWWXHvBdw?e=0L0d0Z",
+    url: "https://drive.google.com/file/d/1VfDO1NsBMHvASajjaB0dG9cImb9wYaNs/view?usp=drive_link",
     category: "Business Programming"
   },
   {
     title: "Programming with C# 4",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/ETVxrRjYPxJLqg86EOVvUtkB6MhUUF8KxrVvyMjgVP4y6g?e=eFpNrf",
+    url: "https://drive.google.com/file/d/1G6X4xEBNjVwsDPup1h_YWBFjnGtCpQyX/view?usp=drive_link",
     category: "C# Programming"
   },
   {
     title: "DevOps 1",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/Ed7r-B8EJGhOo1U0kEU_DRoBwwEnLxmbETVPwhYpq29rJw?e=6quAW3",
+    url: "https://drive.google.com/file/d/18zvHzhpXpmwQSqIshoPiEkuuYJxx47RX/view?usp=drive_link",
     category: "DevOps"
   },
   {
     title: "DevOps 2",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/Ed4o0cUD1O9CoDfRP-8CgGsBkcCOfUMjDDGmxxIP4G42PA?e=EsG511",
+    url: "https://drive.google.com/file/d/1Gj0npSf3N0291XqQSRwpxVS7LGR1FTDg/view?usp=drive_link",
     category: "DevOps"
   },
   {
     title: "Java Project 1",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EemGLhsFhWFIgC9cpnuWYuoBLLWdssomwe5apoYZQ_0YZw?e=1scgAG",
+    url: "https://drive.google.com/file/d/1mmUNd0I1uG4fQBtJMkjlFavwyfAHa3aC/view?usp=drive_link",
     category: "Java Development"
   },
   {
     title: "Java Project 2",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EbA4PSuw2X5GgUTp6thuUngBmLBl30Kc5mNWRDt6SSRQ1w?e=ZK6XSg",
+    url: "https://drive.google.com/file/d/1lnYD_phn6myVPe0Qd9yq7iw3J4UlmjbZ/view?usp=drive_link",
     category: "Java Development"
   },
   {
     title: "Java Project 3",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQ-NFWJlqmNFlGI7jtL7sZMBaXQ6V_IxMu8y58Vw-65Qhg?e=mKIm2P",
+    url: "https://drive.google.com/file/d/1oQsxmo_Yql9NLrCp_BTAfdSjxYGBshLs/view?usp=drive_link",
     category: "Java Development"
   },
   {
     title: "Solutions Development",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EdwnHg8DdB1Dshzvk7AcNd8BEFdFw_joauIyCWzzM0rPnw?e=P8TGig",
+    url: "https://drive.google.com/file/d/16FnpsFuKbFjE_D30G8oHP8axNh6E4Fgp/view?usp=drive_link",
     category: "Solutions Development"
   },
   {
     title: "Solutions Development 2",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/Ef1ahR6NnOpIonqUEN9HCGkB3rpB2ViWXg38odUXgwBMFA?e=FFvx7t",
+    url: "https://drive.google.com/file/d/1G6X4xEBNjVwsDPup1h_YWBFjnGtCpQyX/view?usp=drive_link",
     category: "Solutions Development"
   },
   {
     title: "Task Management Application (Google AppSheets)",
-    url: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EUeLWlrxzQBArJNcgxdm7ewB5CfinvUK4O9accGoVXVVTA?e=8wnfoc",
+    url: "https://drive.google.com/file/d/17qS33vn6jv5KSDvwZsXZSmvUX1PhHtFg/view?usp=drive_link",
     category: "Application Development"
   }
 ];
