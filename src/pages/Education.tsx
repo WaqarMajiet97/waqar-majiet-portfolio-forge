@@ -72,7 +72,7 @@ const Education = () => {
       issuer: "Microsoft",
       date: "April 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/ESPQKybI0t5PkY8WGiDzjx8BcwBIV2I1kGQLxkSE61-Wag?e=zDStkl"
+      linkedinUrl: "https://drive.google.com/file/d/1cxWX7V522Dj6qI1e-KEPeSwdKUYJLOSa/view?usp=drive_link"
     },
     {
       title: "Generative AI: Introduction and Applications",
@@ -205,35 +205,35 @@ const Education = () => {
       issuer: "Microsoft Learn",
       date: "March 2024",
       skills: ["IT Security"],
-      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVcZYp35QUNFv__x9CN48vUBHe2KIZLVyepCVxs8i3ec5g?e=SQT3xu"
+      linkedinUrl: "https://drive.google.com/file/d/1aFuq_KCw7hQnRNJNbnBw6kGXV87u16gR/view?usp=drive_link"
     },
      {
       title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900",
       issuer: "Microsoft Learn",
       date: "March 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQfjOwjjiYJPsetIoAauRdUB-sKVvu_vWYePsAckguXBvw?e=NdAagu"
+      linkedinUrl: "https://drive.google.com/file/d/1HFHpPdYhdJ926UC4MUNyirSztvg3q7YW/view?usp=drive_link"
     },
     {
       title: "DIGITAL LEARNING CERTIFICATE: Digital Modules",
       issuer: "YES",
       date: "June 2025",
       skills: ["Digital Training"],
-      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EesRQcxSuh1AjnQnVwhFMiYBo_XmzHtNXcwzTvdWd6QhMQ?e=65SuG1"
+      linkedinUrl: "https://drive.google.com/file/d/1vEnCtTk-3a7A3cN96cgHf_qs-CLKox1J/view?usp=drive_link"
     },
     {
       title: "DIGITAL LEARNING CERTIFICATE: Enterpreneurship Modules",
       issuer: "YES",
       date: "June 2025",
       skills: ["Enterpreneurship"],
-      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZTAJn5ph4BJmsQsKRZQkwQBLNu2hC33Sem3ADsqYATkDA?e=eGlbnK"
+      linkedinUrl: "https://drive.google.com/file/d/1b14_vQnGm4RksZM90lge0c-JCuRT12sF/view?usp=drive_link"
     },
     {
       title: "DIGITAL LEARNING CERTIFICATE: Work Readiness Modules",
       issuer: "YES",
       date: "June 2025",
       skills: ["Work Readiness"],
-      linkedinUrl: "https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EUBY93aLEyVBmkPZNtDkzTsBK0ueK02sxcMmyMe_Utu-Ig?e=hQHpR4"
+      linkedinUrl: "https://drive.google.com/file/d/1FhQR1cqextSJDAgow7PfllXNUlbag_Tf/view?usp=drive_link"
     },
     {
       title: "Write Professional Emails in English",
