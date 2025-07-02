@@ -295,7 +295,7 @@ const Education = () => {
                   institution="CTU Training Solutions"
                   degree="National Certificate NQF 5: Systems Development"
                   period="2023-2024"
-                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EQM4gWIg0Z9Ah021886yW6ABc6501eZU93e2uZkxg3Vq1Q?e=fxG72b"
+                  documentPath="https://drive.google.com/file/d/1-hWg-Gp47Ow-iwEx7vgdRYYbUkmA0C5E/view?usp=drive_link"
                 />
                 
                 <EducationCard
