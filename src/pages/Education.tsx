@@ -314,7 +314,7 @@ const Education = () => {
                   institution="African Resources Training Group"
                   degree="Wealth Management National Certificate NQF 4"
                   period="2017-2018"
-                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZyx3aPQgw1KrxAihhv_rckBBLUX3m7_uGTassFpF4BoHw?e=jpMvrB"
+                  documentPath="https://drive.google.com/file/d/1rL5tbn6aqk3lrTcYp4OyHBlq1EEYccDZ/view?usp=drive_link"
                 />
                 
                 <EducationCard
@@ -328,7 +328,7 @@ const Education = () => {
                   institution="Spine Road High School"
                   degree="Matric"
                   period="2010-2015"
-                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVaUEVrXhidHiYKMljW2faYBSRKVjCpm9AVhRZJoJlDCKA?e=7qzWSg.pdf"
+                  documentPath="https://drive.google.com/file/d/1BwqoPKhVuQ9sPJA8cVGMZpaHLh_OHpmY/view?usp=drive_link"
                   subjects={[
                     { name: "English Home Language", percentage: "77%" },
                     { name: "Afrikaans First Additional Language", percentage: "70%" },
