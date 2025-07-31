@@ -72,7 +72,7 @@ const Education = () => {
       issuer: "Microsoft",
       date: "April 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "https://drive.google.com/file/d/1cxWX7V522Dj6qI1e-KEPeSwdKUYJLOSa/view?usp=drive_link"
+      linkedinUrl: "/documents/microsoft-security-operations-analyst.pdf"
     },
     {
       title: "Generative AI: Introduction and Applications",
@@ -205,14 +205,14 @@ const Education = () => {
       issuer: "Microsoft Learn",
       date: "March 2024",
       skills: ["IT Security"],
-      linkedinUrl: "https://drive.google.com/file/d/1aFuq_KCw7hQnRNJNbnBw6kGXV87u16gR/view?usp=drive_link"
+      linkedinUrl: "/documents/microsoft-sc-200.pdf"
     },
      {
       title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900",
       issuer: "Microsoft Learn",
       date: "March 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "https://drive.google.com/file/d/1HFHpPdYhdJ926UC4MUNyirSztvg3q7YW/view?usp=drive_link"
+      linkedinUrl: "/documents/microsoft-sc-900.pdf"
     },
     {
       title: "Architecting Solutions on AWS",
@@ -226,21 +226,21 @@ const Education = () => {
       issuer: "YES",
       date: "June 2025",
       skills: ["Digital Training"],
-      linkedinUrl: "https://drive.google.com/file/d/1vEnCtTk-3a7A3cN96cgHf_qs-CLKox1J/view?usp=drive_link"
+      linkedinUrl: "/documents/yes-digital-modules.pdf"
     },
     {
       title: "DIGITAL LEARNING CERTIFICATE: Enterpreneurship Modules",
       issuer: "YES",
       date: "June 2025",
       skills: ["Enterpreneurship"],
-      linkedinUrl: "https://drive.google.com/file/d/1b14_vQnGm4RksZM90lge0c-JCuRT12sF/view?usp=drive_link"
+      linkedinUrl: "/documents/yes-entrepreneurship-modules.pdf"
     },
     {
       title: "DIGITAL LEARNING CERTIFICATE: Work Readiness Modules",
       issuer: "YES",
       date: "June 2025",
       skills: ["Work Readiness"],
-      linkedinUrl: "https://drive.google.com/file/d/1FhQR1cqextSJDAgow7PfllXNUlbag_Tf/view?usp=drive_link"
+      linkedinUrl: "/documents/yes-work-readiness-modules.pdf"
     },
     {
       title: "Write Professional Emails in English",
@@ -302,7 +302,7 @@ const Education = () => {
                   institution="CTU Training Solutions"
                   degree="National Certificate NQF 5: Systems Development"
                   period="2023-2024"
-                  documentPath="https://drive.google.com/file/d/1-hWg-Gp47Ow-iwEx7vgdRYYbUkmA0C5E/view?usp=drive_link"
+                  documentPath="/documents/ctu-systems-development.pdf"
                 />
                 
                 <EducationCard
@@ -321,7 +321,7 @@ const Education = () => {
                   institution="African Resources Training Group"
                   degree="Wealth Management National Certificate NQF 4"
                   period="2017-2018"
-                  documentPath="https://drive.google.com/file/d/1rL5tbn6aqk3lrTcYp4OyHBlq1EEYccDZ/view?usp=drive_link"
+                  documentPath="/documents/artg-wealth-management-nqf4.pdf"
                 />
                 
                 <EducationCard
@@ -335,7 +335,7 @@ const Education = () => {
                   institution="Spine Road High School"
                   degree="Matric"
                   period="2010-2015"
-                  documentPath="https://drive.google.com/file/d/1BwqoPKhVuQ9sPJA8cVGMZpaHLh_OHpmY/view?usp=drive_link"
+                  documentPath="/documents/matric-certificate.pdf"
                   subjects={[
                     { name: "English Home Language", percentage: "77%" },
                     { name: "Afrikaans First Additional Language", percentage: "70%" },

@@ -12,62 +12,62 @@ interface AdditionalProject {
 const additionalProjects: AdditionalProject[] = [
   {
     title: "Programming with C# 1",
-    url: "https://drive.google.com/file/d/1BQspVPDxUkkNg_QZEOam6l9XQ97wXmKF/view?usp=drive_link",
+    url: "/documents/programming-csharp-1.pdf",
     category: "C# Programming"
   },
   {
     title: "Programming with C# 2", 
-    url: "https://drive.google.com/file/d/1KjfXWWgFSja5OogopNXvUfqqWVLANhUy/view?usp=drive_link",
+    url: "/documents/programming-csharp-2.pdf",
     category: "C# Programming"
   },
   {
     title: "Programming with C# 3",
-    url: "https://drive.google.com/file/d/1VfDO1NsBMHvASajjaB0dG9cImb9wYaNs/view?usp=drive_link",
+    url: "/documents/programming-csharp-3.pdf",
     category: "Business Programming"
   },
   {
     title: "Programming with C# 4",
-    url: "https://drive.google.com/file/d/1G6X4xEBNjVwsDPup1h_YWBFjnGtCpQyX/view?usp=drive_link",
+    url: "/documents/programming-csharp-4.pdf",
     category: "C# Programming"
   },
   {
     title: "DevOps 1",
-    url: "https://drive.google.com/file/d/18zvHzhpXpmwQSqIshoPiEkuuYJxx47RX/view?usp=drive_link",
+    url: "/documents/devops-1.pdf",
     category: "DevOps"
   },
   {
     title: "DevOps 2",
-    url: "https://drive.google.com/file/d/1Gj0npSf3N0291XqQSRwpxVS7LGR1FTDg/view?usp=drive_link",
+    url: "/documents/devops-2.pdf",
     category: "DevOps"
   },
   {
     title: "Java Project 1",
-    url: "https://drive.google.com/file/d/1mmUNd0I1uG4fQBtJMkjlFavwyfAHa3aC/view?usp=drive_link",
+    url: "/documents/java-project-1.pdf",
     category: "Java Development"
   },
   {
     title: "Java Project 2",
-    url: "https://drive.google.com/file/d/1lnYD_phn6myVPe0Qd9yq7iw3J4UlmjbZ/view?usp=drive_link",
+    url: "/documents/java-project-2.pdf",
     category: "Java Development"
   },
   {
     title: "Java Project 3",
-    url: "https://drive.google.com/file/d/1oQsxmo_Yql9NLrCp_BTAfdSjxYGBshLs/view?usp=drive_link",
+    url: "/documents/java-project-3.pdf",
     category: "Java Development"
   },
   {
     title: "Solutions Development",
-    url: "https://drive.google.com/file/d/16FnpsFuKbFjE_D30G8oHP8axNh6E4Fgp/view?usp=drive_link",
+    url: "/documents/solutions-development.pdf",
     category: "Solutions Development"
   },
   {
     title: "Solutions Development 2",
-    url: "https://drive.google.com/file/d/1G6X4xEBNjVwsDPup1h_YWBFjnGtCpQyX/view?usp=drive_link",
+    url: "/documents/programming-csharp-4.pdf",
     category: "Solutions Development"
   },
   {
     title: "Task Management Application (Google AppSheets)",
-    url: "https://drive.google.com/file/d/17qS33vn6jv5KSDvwZsXZSmvUX1PhHtFg/view?usp=drive_link",
+    url: "/documents/task-management-app.pdf",
     category: "Application Development"
   }
 ];
