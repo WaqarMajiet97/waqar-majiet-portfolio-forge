@@ -73,13 +73,6 @@ const Education = () => {
       date: "April 2024",
       skills: ["Cybersecurity"],
       linkedinUrl:"https://raw.githubusercontent.com/WaqarMajiet97/waqar-majiet-portfolio-forge/main/public/documents/microsoft-security-operations-analyst.pdf"
-      <iframe 
-      src="https://raw.githubusercontent.com/WaqarMajiet97/waqar-majiet-portfolio-forge/main/public/documents/microsoft-security-operations-analyst.pdf" 
-      width="100%" 
-      height="800px" 
-      style="border: none;" 
-      title="Microsoft Security Operations Analyst PDF">
-      </iframe>
     },
     {
       title: "Generative AI: Introduction and Applications",
