@@ -12,62 +12,62 @@ interface AdditionalProject {
 const additionalProjects: AdditionalProject[] = [
   {
     title: "Programming with C# 1",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/programming-csharp-1.pdf",
+    url: "/documents/programming-csharp-1.pdf",
     category: "C# Programming"
   },
   {
     title: "Programming with C# 2", 
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/programming-csharp-2.pdf",
+    url: "/documents/programming-csharp-2.pdf",
     category: "C# Programming"
   },
   {
     title: "Programming with C# 3",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/programming-csharp-3.pdf",
+    url: "/documents/programming-csharp-3.pdf",
     category: "Business Programming"
   },
   {
     title: "Programming with C# 4",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/programming-csharp-4.pdf",
+    url: "/documents/programming-csharp-4.pdf",
     category: "C# Programming"
   },
   {
     title: "DevOps 1",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/devops-1.pdf",
+    url: "/documents/devops-1.pdf",
     category: "DevOps"
   },
   {
     title: "DevOps 2",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/devops-2.pdf",
+    url: "/documents/devops-2.pdf",
     category: "DevOps"
   },
   {
     title: "Java Project 1",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/java-project-1.pdf",
+    url: "/documents/java-project-1.pdf",
     category: "Java Development"
   },
   {
     title: "Java Project 2",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/java-project-2.pdf",
+    url: "/documents/java-project-2.pdf",
     category: "Java Development"
   },
   {
     title: "Java Project 3",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/java-project-3.pdf",
+    url: "/documents/java-project-3.pdf",
     category: "Java Development"
   },
   {
     title: "Solutions Development",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/solutions-development.pdf",
+    url: "/documents/solutions-development.pdf",
     category: "Solutions Development"
   },
   {
     title: "Solutions Development 2",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/programming-csharp-4.pdf",
+    url: "/documents/programming-csharp-4.pdf",
     category: "Solutions Development"
   },
   {
     title: "Task Management Application (Google AppSheets)",
-    url: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/task-management-app.pdf",
+    url: "/documents/task-management-app.pdf",
     category: "Application Development"
   }
 ];
