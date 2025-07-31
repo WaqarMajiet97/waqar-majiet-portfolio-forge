@@ -72,7 +72,7 @@ const Education = () => {
       issuer: "Microsoft",
       date: "April 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "https://raw.githubusercontent.com/WaqarMajiet97/waqar-majiet-portfolio-forge/main/public/documents/microsoft-security-operations-analyst.pdf"
+      <a href="https://raw.githubusercontent.com/WaqarMajiet97/waqar-majiet-portfolio-forge/main/public/documents/microsoft-security-operations-analyst.pdf" download>Download PDF</a>
     },
     {
       title: "Generative AI: Introduction and Applications",
