@@ -302,7 +302,7 @@ const Education = () => {
                   institution="CTU Training Solutions"
                   degree="National Certificate NQF 5: Systems Development"
                   period="2023-2024"
-                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EfwLSYim-HtFghDqU9CfHNMBgOlwa6lusxo0YIciE5divw?e=zUAGO8"
+                  documentPath="https://drive.google.com/file/d/1-hWg-Gp47Ow-iwEx7vgdRYYbUkmA0C5E/view?usp=drive_link"
                 />
                 
                 <EducationCard
@@ -321,7 +321,7 @@ const Education = () => {
                   institution="African Resources Training Group"
                   degree="Wealth Management National Certificate NQF 4"
                   period="2017-2018"
-                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EZyx3aPQgw1KrxAihhv_rckBrKe02LbI9PR64v8TsKelXQ?e=pWLOxu"
+                  documentPath="https://drive.google.com/file/d/1rL5tbn6aqk3lrTcYp4OyHBlq1EEYccDZ/view?usp=drive_link"
                 />
                 
                 <EducationCard
@@ -335,7 +335,7 @@ const Education = () => {
                   institution="Spine Road High School"
                   degree="Matric"
                   period="2010-2015"
-                  documentPath="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/waqar_majiet_capaciti_org_za/EVaUEVrXhidHiYKMljW2faYBOnMZMvzu9Dtm8-F5poMmQQ?e=ZVR56F"
+                  documentPath="https://drive.google.com/file/d/1BwqoPKhVuQ9sPJA8cVGMZpaHLh_OHpmY/view?usp=drive_link"
                   subjects={[
                     { name: "English Home Language", percentage: "77%" },
                     { name: "Afrikaans First Additional Language", percentage: "70%" },
