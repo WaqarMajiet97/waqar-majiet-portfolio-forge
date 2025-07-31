@@ -72,7 +72,7 @@ const Education = () => {
       issuer: "Microsoft",
       date: "April 2024",
       skills: ["Cybersecurity"],
-      linkedinUrl: "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/public/documents/microsoft-security-operations-analyst.pdf"
+      linkedinUrl: "https://raw.githubusercontent.com/WaqarMajiet97/waqar-majiet-portfolio-forge/main/public/documents/microsoft-security-operations-analyst.pdf"
     },
     {
       title: "Generative AI: Introduction and Applications",
