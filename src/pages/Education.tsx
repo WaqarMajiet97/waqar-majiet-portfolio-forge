@@ -222,6 +222,20 @@ const Education = () => {
       linkedinUrl: "https://www.coursera.org/account/accomplishments/records/ANYKBKGFFQE9"
     },
     {
+      title: "Building Data Lakes on AWS",
+      issuer: "Amazon Web Services",
+      date: "July 2025",
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/YREV2M01TD8R"
+    },
+    {
+      title: "Exam Prep: AWS Certified Solutions Architect Associate",
+      issuer: "Amazon Web Services",
+      date: "July 2025",
+      skills: ["Cloud Computing"],
+      linkedinUrl: "https://www.coursera.org/account/accomplishments/records/IF5SNPYMN9WM"
+    },
+    {
       title: "DIGITAL LEARNING CERTIFICATE: Digital Modules",
       issuer: "YES",
       date: "June 2025",
