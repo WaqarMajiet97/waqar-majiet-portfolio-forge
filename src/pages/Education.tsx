@@ -5,6 +5,7 @@ import EducationCard from '@/components/EducationCard';
 import CertificationCard from '@/components/CertificationCard';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import educationHeaderBg from '@/assets/education-header-bg.jpg';
 
 const Education = () => {
   const [showEducation, setShowEducation] = useState(false);
@@ -269,7 +270,7 @@ const Education = () => {
     <Layout>
       {/* Header */}
       <section className="bg-primary/5 py-16" style={{
-        backgroundImage: "url(https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)",
+        backgroundImage: `url(${educationHeaderBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         position: "relative"

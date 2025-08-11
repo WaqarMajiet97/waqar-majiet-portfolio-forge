@@ -6,6 +6,7 @@ import { Briefcase, GraduationCap, User, Mail, Sparkles, Zap, Rocket } from 'luc
 import { Link } from 'react-router-dom';
 import CertificationCard from '@/components/CertificationCard';
 import { useEffect, useState } from 'react';
+import educationCardImage from '@/assets/education-card-image.jpg';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState({
@@ -109,7 +110,7 @@ const Index = () => {
                 title: "Education", 
                 description: "My academic journey and qualifications", 
                 link: "/education", 
-                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                image: educationCardImage,
                 color: "from-orange-500/20 to-red-500/20"
               },
               { 
